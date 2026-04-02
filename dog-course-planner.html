@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Кинология & Бихевиористика — Учебный план</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream: #F5F0E8;
+    --cream-dark: #EDE7D8;
+    --paper: #FAF7F2;
+    --ink: #1C1814;
+    --ink-muted: #6B6356;
+    --ink-faint: #A39A8E;
+    --amber: #C17B2A;
+    --amber-light: #F5E6CC;
+    --amber-pale: #FBF4E8;
+    --green: #3A6B3E;
+    --green-light: #D8ECD9;
+    --red-light: #F5E0D8;
+    --red: #A0402A;
+    --border: rgba(92,76,56,0.15);
+    --border-strong: rgba(92,76,56,0.3);
+    --shadow: 0 2px 16px rgba(28,24,20,0.08);
+    --shadow-sm: 0 1px 4px rgba(28,24,20,0.06);
+  }
+
+  html { font-size: 16px; scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+
+  /* Layout */
+  .shell { display: flex; min-height: 100vh; }
+
+  /* Sidebar */
+  .sidebar {
+    width: 300px;
+    flex-shrink: 0;
+    background: var(--cream);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0; left: 0; bottom: 0;
+    overflow-y: auto;
+    z-index: 10;
+  }
+
+  .sidebar-header {
+    padding: 32px 24px 24px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .app-title {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.3;
+    margin-bottom: 4px;
+  }
+
+  .app-subtitle {
+    font-size: 12px;
+    color: var(--ink-muted);
+    font-weight: 300;
+    letter-spacing: 0.04em;
+  }
+
+  /* Progress in sidebar */
+  .sidebar-progress {
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .progress-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .progress-label span:first-child {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-muted);
+    font-weight: 500;
+  }
+
+  .progress-label .prog-num {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--amber);
+  }
+
+  .progress-track {
+    height: 4px;
+    background: var(--cream-dark);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: var(--amber);
+    border-radius: 2px;
+    transition: width 0.5s ease;
+  }
+
+  /* Search */
+  .sidebar-search {
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .search-wrap {
+    position: relative;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--ink-faint);
+    pointer-events: none;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 8px 12px 8px 32px;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid var(--border-strong);
+    border-radius: 8px;
+    background: var(--paper);
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .search-input::placeholder { color: var(--ink-faint); }
+  .search-input:focus { border-color: var(--amber); }
+
+  /* Filters */
+  .sidebar-filters {
+    padding: 12px 24px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .filter-pill {
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 99px;
+    border: 1px solid var(--border-strong);
+    background: transparent;
+    color: var(--ink-muted);
+    cursor: pointer;
+    transition: all 0.15s;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .filter-pill:hover { background: var(--cream-dark); }
+  .filter-pill.active {
+    background: var(--amber);
+    border-color: var(--amber);
+    color: white;
+  }
+
+  /* Lesson list in sidebar */
+  .lesson-nav {
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px 0;
+  }
+
+  .lesson-nav-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 24px;
+    cursor: pointer;
+    transition: background 0.12s;
+    border-left: 3px solid transparent;
+  }
+
+  .lesson-nav-item:hover { background: var(--cream-dark); }
+
+  .lesson-nav-item.active {
+    background: var(--amber-light);
+    border-left-color: var(--amber);
+  }
+
+  .lesson-nav-item.is-today {
+    background: var(--amber-pale);
+  }
+
+  .lesson-nav-item.is-today.active {
+    background: var(--amber-light);
+    border-left-color: var(--amber);
+  }
+
+  .nav-check {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1.5px solid var(--border-strong);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+    cursor: pointer;
+  }
+
+  .nav-check:hover { border-color: var(--amber); }
+
+  .nav-check.done {
+    background: var(--green);
+    border-color: var(--green);
+  }
+
+  .nav-check.done::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 5px;
+    border-left: 1.5px solid white;
+    border-bottom: 1.5px solid white;
+    transform: rotate(-45deg) translate(0.5px, -0.5px);
+  }
+
+  .nav-title {
+    font-size: 12px;
+    color: var(--ink-muted);
+    line-height: 1.4;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .lesson-nav-item.active .nav-title { color: var(--ink); font-weight: 500; }
+  .lesson-nav-item.is-today .nav-title { color: var(--amber); }
+  .lesson-nav-item.is-today.active .nav-title { color: var(--amber); }
+
+  .nav-num {
+    font-size: 10px;
+    color: var(--ink-faint);
+    flex-shrink: 0;
+    font-weight: 300;
+  }
+
+  /* Main content */
+  .main {
+    margin-left: 300px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-header {
+    padding: 32px 48px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .date-display {
+    font-size: 13px;
+    color: var(--ink-muted);
+    font-weight: 300;
+  }
+
+  .today-btn {
+    padding: 6px 14px;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    border: 1px solid var(--amber);
+    border-radius: 6px;
+    background: transparent;
+    color: var(--amber);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .today-btn:hover { background: var(--amber); color: white; }
+
+  /* Lesson view */
+  .lesson-view {
+    padding: 32px 48px 64px;
+    max-width: 780px;
+  }
+
+  .lesson-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .lesson-num-badge {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  .badge-dot { color: var(--border-strong); }
+
+  .badge-today-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    background: var(--amber-light);
+    color: var(--amber);
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 99px;
+  }
+
+  .badge-done-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    background: var(--green-light);
+    color: var(--green);
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 99px;
+  }
+
+  .lesson-main-title {
+    font-family: 'Lora', serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 16px;
+    color: var(--ink);
+  }
+
+  .lesson-date-line {
+    font-size: 13px;
+    color: var(--ink-faint);
+    margin-bottom: 24px;
+    font-weight: 300;
+  }
+
+  .lesson-desc-block {
+    background: var(--cream);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 28px;
+    border: 1px solid var(--border);
+  }
+
+  .lesson-desc-block p {
+    font-size: 15px;
+    color: var(--ink-muted);
+    line-height: 1.75;
+  }
+
+  /* Key points */
+  .key-points {
+    margin-bottom: 28px;
+  }
+
+  .key-points-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-faint);
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+
+  .key-point {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+    align-items: flex-start;
+  }
+
+  .key-point-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--amber);
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 8px;
+  }
+
+  .key-point p {
+    font-size: 14px;
+    color: var(--ink-muted);
+    line-height: 1.6;
+  }
+
+  /* Actions */
+  .lesson-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .btn-primary:hover { background: var(--amber); }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--border-strong);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .btn-secondary:hover { border-color: var(--amber); color: var(--amber); }
+  .btn-secondary.done-btn { border-color: var(--green); color: var(--green); background: var(--green-light); }
+  .btn-secondary.done-btn:hover { background: var(--green); color: white; }
+
+  /* Divider */
+  .divider {
+    height: 1px;
+    background: var(--border);
+    margin: 32px 0;
+  }
+
+  /* Prev / Next */
+  .lesson-nav-arrows {
+    display: flex;
+    gap: 12px;
+  }
+
+  .nav-arrow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    background: transparent;
+    color: var(--ink-muted);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-weight: 400;
+    max-width: 220px;
+    text-align: left;
+  }
+
+  .nav-arrow:hover { border-color: var(--ink); color: var(--ink); }
+  .nav-arrow:disabled { opacity: 0.3; cursor: not-allowed; }
+  .nav-arrow span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  /* Welcome state */
+  .welcome {
+    padding: 32px 48px 64px;
+    max-width: 680px;
+  }
+
+  .welcome h2 {
+    font-family: 'Lora', serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--ink);
+  }
+
+  .welcome p {
+    font-size: 15px;
+    color: var(--ink-muted);
+    line-height: 1.75;
+    margin-bottom: 24px;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  .stat-card {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+  }
+
+  .stat-num {
+    font-family: 'Lora', serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--amber);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: var(--ink-muted);
+    font-weight: 400;
+  }
+
+  /* Tag pills for sections */
+  .section-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    margin-top: 4px;
+  }
+
+  .tag-behavior { background: #E8F0F5; color: #2A5A7C; }
+  .tag-training { background: #F0ECF8; color: #5A3A8C; }
+  .tag-physiology { background: #EDF5EC; color: #2E6B35; }
+  .tag-life { background: #F5EDE8; color: #8C4A2E; }
+  .tag-search { background: #F5F0E0; color: #8C7A2E; }
+  .tag-puppies { background: #F8EBF0; color: #8C2E5A; }
+
+  /* Scrollbar */
+  .lesson-nav::-webkit-scrollbar { width: 4px; }
+  .lesson-nav::-webkit-scrollbar-track { background: transparent; }
+  .lesson-nav::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 2px; }
+  .sidebar::-webkit-scrollbar { width: 4px; }
+  .sidebar::-webkit-scrollbar-track { background: transparent; }
+  .sidebar::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 2px; }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .sidebar { width: 100%; position: static; height: auto; border-right: none; border-bottom: 1px solid var(--border); }
+    .shell { flex-direction: column; }
+    .main { margin-left: 0; }
+    .lesson-view, .welcome, .main-header { padding: 24px; }
+    .lesson-main-title { font-size: 24px; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .lesson-nav { max-height: 200px; }
+  }
+
+  /* Animations */
+  .lesson-view, .welcome { animation: fadeIn 0.2s ease; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="app-title">Кинология &amp;<br>Бихевиористика</div>
+      <div class="app-subtitle">Учебный план · 108 занятий</div>
+    </div>
+
+    <div class="sidebar-progress">
+      <div class="progress-label">
+        <span>Прогресс</span>
+        <span class="prog-num" id="prog-text">0 / 108</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="prog-fill" style="width:0%"></div>
+      </div>
+    </div>
+
+    <div class="sidebar-search">
+      <div class="search-wrap">
+        <svg class="search-icon" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input type="text" class="search-input" id="search-input" placeholder="Поиск по темам…">
+      </div>
+    </div>
+
+    <div class="sidebar-filters">
+      <button class="filter-pill active" data-filter="all">Все</button>
+      <button class="filter-pill" data-filter="today">Сегодня</button>
+      <button class="filter-pill" data-filter="upcoming">Впереди</button>
+      <button class="filter-pill" data-filter="done">Пройдено</button>
+    </div>
+
+    <nav class="lesson-nav" id="lesson-nav"></nav>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="main-header">
+      <div class="date-display" id="date-display"></div>
+      <button class="today-btn" onclick="goToday()">← Сегодня</button>
+    </div>
+
+    <div id="content-area"></div>
+  </main>
+
+</div>
+
+<script>
+const START_DATE = new Date('2026-04-02');
+
+const LESSONS = [
+  {title:"Основы работы с поведением. Организация курса",desc:"Введение в курс: цели обучения, структура программы, ключевые принципы работы с поведением собак.",points:["Что такое поведение с научной точки зрения","Как устроена программа курса","Цели и ожидаемые результаты","Ключевые понятия кинологии и бихевиористики"],tag:"behavior"},
+  {title:"Происхождение собак, особенности эволюции",desc:"Как волки стали собаками, ключевые этапы доместикации, что отличает собаку от других псовых.",points:["Теории происхождения собак от волка","Этапы доместикации и их последствия","Отличия Canis lupus familiaris от других псовых","Как эволюция сформировала поведенческие черты"],tag:"behavior"},
+  {title:"Роль собаки в семье человека",desc:"Функции собаки в современной семье, ожидания владельцев vs потребности собаки, партнёрские отношения.",points:["Исторические и современные функции собаки","Ожидания владельцев и реальность","Как строить партнёрские отношения","Взаимная привязанность: научный взгляд"],tag:"behavior"},
+  {title:"Иерархия: мифы и современные знания",desc:"Разбор теории доминирования, почему «вожак стаи» — устаревший миф, современный взгляд на отношения собака–человек.",points:["История теории доминирования и её критика","Исследования Меха: почему стая ≠ иерархия","Современный взгляд на отношения человек–собака","Практические последствия отказа от доминирования"],tag:"behavior"},
+  {title:"Когнитивные способности собак",desc:"Память, решение задач, социальное познание, понимание жестов и эмоций человека.",points:["Рабочая и долгосрочная память собак","Решение задач и инсайт","Понимание жестов и взгляда человека","Социальные когниции: исследования и выводы"],tag:"behavior"},
+  {title:"Породы: особенности и потребности",desc:"Классификация пород, как разведение сформировало поведенческие черты, генетически заложенные паттерны.",points:["Классификация по рабочим функциям","Генетика поведения: что наследуется","Потребности разных породных групп","Несоответствие ожиданий и породных потребностей"],tag:"behavior"},
+  {title:"Анализ породы",desc:"Алгоритм изучения породы для консультанта: история, рабочие функции, типичные проблемы, потребности.",points:["Алгоритм анализа: 5 шагов","История создания и рабочие функции","Типичные поведенческие проблемы породы","Формирование рекомендаций с учётом породы"],tag:"behavior"},
+  {title:"Эмоции собак",desc:"Базовые и сложные эмоции у собак, научные данные о чувственной жизни, как распознавать эмоциональные состояния.",points:["Базовые эмоции по Панксеппу","Являются ли собаки сознательными?","Нейробиологические маркеры эмоций","Как распознать радость, страх, фрустрацию"],tag:"behavior"},
+  {title:"Коммуникация собак. Правила взаимодействия",desc:"Как собаки общаются между собой: дистанция, ритуалы, правила встречи и разрешения конфликтов.",points:["Зоны комфорта и личное пространство","Ритуалы приветствия между собаками","Правила разрешения конфликтов","Когда общение переходит в конфликт"],tag:"behavior"},
+  {title:"Язык тела в общении с сородичами и человеком",desc:"Позы, движения, мимика — что они означают, как читать язык тела в разных контекстах.",points:["Позы тела: подчинение, уверенность, напряжение","Сигналы хвоста, ушей, шерсти","Мимика: взгляд, оскал, расслабление","Контекст как ключ к интерпретации"],tag:"behavior"},
+  {title:"Сигналы примирения. Построение контакта",desc:"Calming signals по Тюрид Ругос, как правильно подходить к чужой собаке, нормы общения.",points:["25 сигналов примирения по Ругос","Как и зачем собака «говорит» человеку","Правила подхода к чужой собаке","Ошибки людей при знакомстве с собакой"],tag:"behavior"},
+  {title:"Лай: виды и значение. Укусы: причины и виды",desc:"Классификация лая по функции, градации укусов, предупреждающие сигналы перед укусом.",points:["Типы лая и их коммуникативная функция","Лестница агрессии по Кенделл Шепард","Градации укусов по Яну Данбару","Предупреждающие сигналы, которые люди игнорируют"],tag:"behavior"},
+  {title:"Наблюдение как инструмент работы",desc:"Как системно наблюдать за собакой: что фиксировать, как интерпретировать поведение без домыслов.",points:["Этология vs антропоморфизм","Что и как фиксировать при наблюдении","ABC-анализ: антецедент, поведение, последствие","Дневник наблюдений: форма и примеры"],tag:"behavior"},
+  {title:"Алгоритм работы с поведением собаки",desc:"Анализ образа жизни и уровня стресса, сбор анамнеза, структура рекомендаций для клиента.",points:["Сбор анамнеза: ключевые вопросы","Оценка уровня стресса и качества жизни","Построение плана работы","Структура консультации и документация"],tag:"behavior"},
+  {title:"Адаптация собаки в новом доме",desc:"Этапы адаптации, типичные ошибки первых недель, как помочь собаке освоиться без стресса.",points:["Правило 3–3–3 для новых собак","Что происходит в нервной системе при переезде","Типичные ошибки первых дней","Организация пространства и режима"],tag:"behavior"},
+  {title:"Развитие уверенности и поведенческой гибкости",desc:"Что такое уверенность у собаки, как формировать устойчивость к новым ситуациям.",points:["Уверенность как нейробиологический феномен","Упражнения на изучение нового","Игры, повышающие адаптивность","Ошибки при «закаливании» характера"],tag:"behavior"},
+  {title:"Самоконтроль: механизмы и развитие",desc:"Нейробиологические основы самоконтроля, упражнения и игры для его развития у собаки.",points:["Роль префронтальной коры в самоконтроле","Почему самоконтроль истощается","Упражнения на торможение реакций","Самоконтроль vs подавление"],tag:"behavior"},
+  {title:"Алгоритм работы с «проблемным поведением»",desc:"Структура первичной консультации, формулировка проблемы, постановка целей, план работы.",points:["Что значит «проблемное» и для кого","Как переформулировать запрос клиента","Постановка реалистичных целей","Структура плана и сроки"],tag:"behavior"},
+  {title:"Причины проблемного поведения",desc:"Потребности, стресс, боль, история жизни — как найти первопричину нежелательного поведения.",points:["Треугольник: потребности, обучение, физиология","Роль боли и заболеваний","История жизни как фактор","Дифференциальная диагностика причин"],tag:"behavior"},
+  {title:"Заболевания как причина нежелательного поведения",desc:"Влияние боли и болезней на поведение, породная предрасположенность к заболеваниям.",points:["Боль и её поведенческие проявления","Гормональные нарушения и поведение","Породная предрасположенность к болезням","Когда поведение — симптом болезни"],tag:"behavior"},
+  {title:"Ментальное здоровье собак",desc:"Концепция психического благополучия, факторы риска, признаки нарушений ментального здоровья.",points:["Что такое психическое благополучие у животных","Факторы риска нарушений","Признаки тревожности, депрессии, ОКР","Профилактика ментальных расстройств"],tag:"behavior"},
+  {title:"Консультация у ветеринарного специалиста",desc:"Когда направлять к ветеринару, как выстроить командную работу, что важно сообщить врачу.",points:["Красные флаги для направления к ветеринару","Какие специалисты занимаются поведением","Как описать поведенческую проблему врачу","Фармакологическая поддержка в коррекции поведения"],tag:"behavior"},
+  {title:"Удовлетворение потребностей как метод",desc:"Почему удовлетворение потребностей — первый шаг, иерархия потребностей собаки, практические стратегии.",points:["Пять свобод и пять доменов","Иерархия потребностей собаки","Как аудит потребностей меняет поведение","Практические стратегии обогащения"],tag:"behavior"},
+  {title:"Обучение альтернативному поведению",desc:"Принцип замены нежелательного поведения, подбор подходящей альтернативы, построение схемы.",points:["Принцип DRI/DRA (несовместимое поведение)","Как выбрать подходящую альтернативу","Построение плана замены","Типичные ошибки при замене поведения"],tag:"training"},
+  {title:"Техники релаксации",desc:"Протокол расслабления, массаж, дыхательные сигналы, применение при тревожности и реактивности.",points:["Протокол расслабления Карен Овер","Массаж TTouch: основы","Дыхательные сигналы для собаки","Применение релаксации при реактивности"],tag:"behavior"},
+  {title:"Ритуалы как инструмент работы",desc:"Что такое поведенческие ритуалы, почему они снижают тревогу, примеры полезных ритуалов.",points:["Ритуал как предсказуемость и безопасность","Утренние и вечерние ритуалы","Ритуалы для снижения тревоги расставания","Ошибки при введении ритуалов"],tag:"behavior"},
+  {title:"Работа с запросом «собака тянет поводок»",desc:"Причины тяги, методики обучения свободному поводку, типичные ошибки владельцев.",points:["Почему собака тянет (и это нормально)","Управление расстоянием и внимание","Метод Ругос: свободный поводок","Типичные ошибки и как их избежать"],tag:"training"},
+  {title:"Работа с запросом «собака подбирает»",desc:"Управление окружающей средой, обучение «оставь» и «дай», снижение мотивации подбирать.",points:["Почему подбирание — нормальное поведение","Менеджмент среды как первый шаг","Обучение «оставь» с нуля","«Дай» — безопасная альтернатива"],tag:"training"},
+  {title:"Контробусловливание и ассоциативные переносы",desc:"Механизм изменения эмоционального отношения к раздражителю, схема работы, примеры.",points:["Классическое обусловливание: пересмотр","Как формируется новая эмоциональная реакция","Схема контробусловливания","Примеры из практики"],tag:"training"},
+  {title:"Десенсибилизация: схема, ошибки. Метод погружения",desc:"Постепенное привыкание vs метод погружения: сравнение, последствия, правила безопасной работы.",points:["Что такое системная десенсибилизация","Пороговая зона: как работать у порога","Почему погружение вредно","Типичные ошибки при десенсибилизации"],tag:"training"},
+  {title:"Разбор популярных протоколов",desc:"Обзор BAT, CAT, LAT и других протоколов: принципы, показания, ограничения.",points:["BAT 2.0 (Grisha Stewart): принципы","CAT: функциональное подкрепление","LAT (Look at That) по Leslie McDevitt","Как выбрать протокол под конкретный случай"],tag:"training"},
+  {title:"Игнорирование нежелательного поведения",desc:"Когда применять, схема, типичные ошибки, случаи когда игнорирование вредит.",points:["Угасание: механизм и взрыв перед угасанием","Когда игнорирование работает","Когда игнорирование вредит (страх, боль)","Схема применения и типичные ошибки"],tag:"training"},
+  {title:"Агрессия: определение и причины",desc:"Современный взгляд на агрессию как коммуникацию, функциональные типы агрессии, триггеры.",points:["Агрессия как коммуникация, а не дефект","Типы агрессии по функции","Нейробиология агрессивного поведения","Провоцирующие факторы и условия"],tag:"behavior"},
+  {title:"Агрессия: алгоритм работы",desc:"Параллельные прогулки, создание нового позитивного опыта, план работы шаг за шагом.",points:["Оценка безопасности: первый шаг","Параллельные прогулки как инструмент","Создание нового позитивного опыта","Долгосрочный план и оценка прогресса"],tag:"behavior"},
+  {title:"Организация прогулок с реактивной собакой",desc:"Выбор маршрутов, управление расстоянием до раздражителя, амуниция и снаряжение.",points:["Выбор маршрутов с учётом триггеров","Управление расстоянием: пространство = безопасность","Амуниция для реактивных собак","Коммуникация с окружающими на прогулке"],tag:"behavior"},
+  {title:"Агрессия/пугливость к прохожим и собакам на улице",desc:"Принципы работы, пошаговые схемы, правила безопасности при выгуле.",points:["Дифференциация агрессии и пугливости","Пошаговая схема работы у триггера","Управление дистанцией на практике","Правила безопасности для владельца"],tag:"behavior"},
+  {title:"Агрессия/пугливость к гостям в доме",desc:"Менеджмент пространства, протокол встречи гостей, схема постепенного привыкания.",points:["Менеджмент пространства при гостях","Протокол безопасной встречи","Схема постепенного привыкания к гостям","Инструкция для гостей"],tag:"behavior"},
+  {title:"Агрессия к членам семьи",desc:"Анализ контекста, работа с триггерами, вопросы безопасности, долгосрочный план.",points:["Анализ контекста: когда, с кем, почему","Работа с триггерами внутри семьи","Вопросы безопасности","Долгосрочный план и работа с семьёй"],tag:"behavior"},
+  {title:"Агрессия к сородичам",desc:"Межсобачная агрессия: виды, причины, методики работы, профилактика конфликтов.",points:["Виды межсобачной агрессии","Причины и провоцирующие факторы","Методики работы на прогулке","Профилактика конфликтов между собаками"],tag:"behavior"},
+  {title:"Ресоциализация взрослой собаки",desc:"Алгоритм ресоциализации, темп работы, самостоятельная работа владельца с пугливой собакой.",points:["Что такое ресоциализация взрослой собаки","Алгоритм: этапы и критерии перехода","Темп работы: почему медленно = быстро","Самостоятельная работа владельца"],tag:"behavior"},
+  {title:"Нечистоплотность: причины и способы работы",desc:"Медицинские и поведенческие причины, ведение дневника, схема приучения к месту.",points:["Медицинские причины нечистоплотности","Поведенческие и стрессовые причины","Ведение дневника мочеиспускания","Схема приучения и типичные ошибки"],tag:"behavior"},
+  {title:"Собака не может оставаться дома одна: причины",desc:"Разбор синдрома разлуки, обзор исследований, дифференциальная диагностика причин.",points:["Синдром разлуки vs другие причины","Обзор ключевых исследований","Дифференциальная диагностика","Видеомониторинг как инструмент диагностики"],tag:"behavior"},
+  {title:"Собака не может оставаться дома одна: помощь",desc:"Пошаговый протокол приучения к одиночеству, видеомониторинг, работа с тревогой.",points:["Протокол постепенного приучения","Работа с тревогой расставания","Обогащение среды в отсутствие хозяина","Когда нужна фармакологическая поддержка"],tag:"behavior"},
+  {title:"Страхи: причины и виды",desc:"Классификация страхов, генетические и средовые факторы, отличие страха от тревоги.",points:["Виды страхов: генерализованный, специфический","Генетика страха: что передаётся","Страх vs тревога: клиническое различие","Средовые факторы формирования страхов"],tag:"behavior"},
+  {title:"Страхи: обзор методик работы",desc:"Систематический обзор подходов, выбор методики под конкретный случай, ошибки.",points:["Методики работы со страхами: обзор","Критерии выбора методики","Ошибки при работе со страхами","Оценка прогресса"],tag:"behavior"},
+  {title:"Шумофобия у собак",desc:"Страх грома и фейерверков, физиологические реакции, практические способы помочь собаке.",points:["Физиология шумофобии","Признаки и градации тяжести","Управление средой во время грозы","Терапевтические протоколы и фармакология"],tag:"behavior"},
+  {title:"Гиперактивность: методики работы",desc:"Что такое истинная гиперактивность, управление возбуждением, обогащение среды, режим дня.",points:["Истинная гиперактивность vs высокая энергия","Управление уровнем возбуждения","Структурированный режим дня","Нюхательная активность как успокоение"],tag:"behavior"},
+  {title:"Депрессия и синдром выученной беспомощности",desc:"Признаки депрессии у собак, как помочь собаке «найти голос», программа восстановления.",points:["Признаки депрессии у собак","Выученная беспомощность: история и суть","Программа восстановления агентности","Обогащение среды как терапия"],tag:"behavior"},
+  {title:"Неврозы: схема работы",desc:"Поведенческие неврозы у собак, диагностика, стратегии лечения и поддержки.",points:["Что такое невроз у собаки","Диагностические критерии","Стратегии поведенческой терапии","Когда нужна медикаментозная поддержка"],tag:"behavior"},
+  {title:"Анатомия. Выбор прогулочной амуниции",desc:"Строение тела собаки, как анатомия влияет на выбор шлейки, ошейника и поводка.",points:["Анатомия шеи, спины, грудной клетки","Как ошейник влияет на трахею и ШОП","Критерии выбора шлейки","Виды амуниции и их влияние на движение"],tag:"physiology"},
+  {title:"Физиология: нервная система и мозг",desc:"Устройство нервной системы, строение мозга, связь физиологии с поведением.",points:["ЦНС и ПНС: как устроена нервная система","Ключевые структуры мозга и их функции","Нейромедиаторы и поведение","Нейропластичность: можно ли изменить мозг"],tag:"physiology"},
+  {title:"Сенсорные системы собак",desc:"Обоняние, слух, зрение, осязание — особенности восприятия мира собакой.",points:["Обоняние: 300 млн рецепторов","Слуховой диапазон и его значение","Зрение: цвета, движение, острота","Вибриссы, терморецепция, вестибулярная система"],tag:"physiology"},
+  {title:"Пищеварение. Питание и поведение",desc:"Строение ЖКТ, разбор схем питания, мифы о правильном кормлении, организация кормления.",points:["Строение ЖКТ и особенности пищеварения","Натуралка vs сухой корм: научный взгляд","Влияние питания на поведение","Организация кормления и пищевое поведение"],tag:"physiology"},
+  {title:"Опорно-двигательный аппарат",desc:"Строение костей, суставов, мышц; типичные проблемы ОДА и их влияние на поведение.",points:["Строение скелета и суставов","Мышечная система: особенности у собак","Дисплазия, остеохондроз и поведение","Влияние ОДА на двигательную активность"],tag:"physiology"},
+  {title:"Первичная диагностика проблем ОДА",desc:"Как распознать боль в движении, неврологический и ортопедический осмотр для консультанта.",points:["Признаки боли в движении","Простой неврологический осмотр","Ортопедический осмотр: что проверить","Когда срочно к ветеринару-ортопеду"],tag:"physiology"},
+  {title:"Гормональная система и поведение",desc:"Влияние половых гормонов, стрессовых гормонов и других эндокринных факторов на поведение.",points:["Тестостерон, эстроген и поведение","Кортизол: стрессовый гормон и его эффекты","Окситоцин, дофамин, серотонин","Гормональные изменения и циклы"],tag:"physiology"},
+  {title:"Оказание первой помощи собаке",desc:"Базовые навыки первой помощи, что делать при травме, ожоге, отравлении, судорогах.",points:["Оценка состояния: ABC (airways, breathing, circulation)","Помощь при кровотечении и травме","Признаки отравления и первые действия","Судороги, тепловой удар, утопление"],tag:"physiology"},
+  {title:"Иммунная система собак",desc:"Основы иммунологии, вакцинация, аллергии, связь иммунитета с поведением и стрессом.",points:["Врождённый и адаптивный иммунитет","Вакцинация: как работает и зачем","Аллергии и их поведенческие проявления","Стресс и иммунный ответ"],tag:"physiology"},
+  {title:"Боль и её восприятие. Распознавание боли",desc:"Как собаки переживают боль, поведенческие признаки хронической и острой боли.",points:["Физиология болевых ощущений","Острая vs хроническая боль","Шкалы оценки боли (Glasgow, Colorado)","Поведенческие маркеры хронической боли"],tag:"physiology"},
+  {title:"Выбор специальной амуниции и одежды",desc:"Показания для специальных шлеек, намордников, одежды; критерии правильного выбора.",points:["Показания для намордника","Выбор и приучение к наморднику","Специальные шлейки (хромота, реабилитация)","Одежда: когда нужна и как выбрать"],tag:"life"},
+  {title:"Выбор предметов быта. Гигиенический уход",desc:"Когтеточки, лежаки, миски, уход за шерстью и зубами, приучение к гигиенческим процедурам.",points:["Как выбрать лежак и миску","Уход за шерстью: расчёсывание, купание","Уход за зубами: как приучить","Когтерезки и уход за лапами"],tag:"life"},
+  {title:"Потребности и видотипичное поведение",desc:"Иерархия потребностей собаки, что такое видотипичное поведение и почему его нужно обеспечивать.",points:["Видотипичное поведение: нюхание, жевание, охота","Как подавление потребностей приводит к проблемам","Обогащение среды как удовлетворение потребностей","Пять доменов благополучия"],tag:"life"},
+  {title:"Физические нагрузки: польза и риски",desc:"Полезные виды нагрузок, риски спорта для разных пород, мифы о «усталой = послушной» собаке.",points:["Подходящие нагрузки по породе и возрасту","Риски интенсивного спорта","Миф об усталости как решении проблем","Баланс физической и умственной нагрузки"],tag:"life"},
+  {title:"Организация домашнего пространства",desc:"Зонирование, место для отдыха, безопасность, обогащение среды в квартире и доме.",points:["Зонирование пространства для собаки","Организация места для отдыха","Безопасность дома: что убрать","Обогащение среды в ограниченном пространстве"],tag:"life"},
+  {title:"Игры и занятия для качества жизни",desc:"Обогащение среды, поиск лакомств, развивающие игры, нюхательный коврик — как и зачем.",points:["Нюхательный коврик: польза и принципы","Поиск лакомств в доме и на прогулке","Конги и кормушки-головоломки","Игра с хозяином: правила безопасной игры"],tag:"life"},
+  {title:"Развивающие игры для собак",desc:"Игры на когницию: задачи, головоломки, новые активности, правила введения.",points:["Когнитивные игры и их польза","Виды пазлов и головоломок","Как вводить новые игры","Игры для пожилых и больных собак"],tag:"life"},
+  {title:"Полезные ритуалы для комфортной жизни",desc:"Утренние и вечерние ритуалы, ритуалы прощания и встречи, предсказуемость как защита.",points:["Почему ритуалы снижают тревогу","Ритуал утра и вечера","Ритуал прощания и возвращения","Как ввести ритуал без принуждения"],tag:"life"},
+  {title:"Взаимодействие с собакой дома",desc:"Качество ежедневного общения: как прикасаться, играть, отдыхать рядом без конфликтов.",points:["Качественное взаимодействие vs количество","Как правильно гладить собаку","Игра и отдых: читаем сигналы собаки","Конфликты в быту: предотвращение"],tag:"life"},
+  {title:"Организация прогулок по потребностям",desc:"Что такое «хорошая прогулка», нюхательная активность, свобода выбора маршрута.",points:["Что нужно собаке на прогулке","Нюхание как главная активность","Свободный выбор маршрута","Как часто и сколько гулять"],tag:"life"},
+  {title:"Современный взгляд на благополучие собак",desc:"Five Domains, индикаторы качества жизни, как оценивать и улучшать welfare.",points:["Концепция Five Domains (Меллор)","Позитивные и негативные индикаторы","Оценка качества жизни на практике","Как улучшить welfare конкретной собаки"],tag:"life"},
+  {title:"Разведение собак: процесс и законодательство",desc:"Как происходит разведение, прогнозы темперамента, правовые аспекты в России.",points:["Как выбирается пара для вязки","Наследование темперамента и характера","Что отличает ответственного заводчика","Законодательство о разведении в России"],tag:"life"},
+  {title:"Несколько животных в доме",desc:"Введение нового животного, управление ресурсами, конфликты между питомцами.",points:["Как правильно познакомить животных","Управление ресурсами (миски, лежаки, игрушки)","Признаки напряжения и конфликтов","Хронические конфликты: когда помочь нельзя"],tag:"life"},
+  {title:"Стресс: понятие и физиология",desc:"Что такое стресс, нейроэндокринные механизмы стрессового ответа, острый и хронический стресс.",points:["Стресс-система: ось ГГН","Острый vs хронический стресс","Аллостатическая нагрузка","Кумулятивный стресс: что это"],tag:"physiology"},
+  {title:"Стресс: причины, симптомы, последствия",desc:"Стрессоры у собак, признаки стресса в поведении и теле, долгосрочные последствия.",points:["Типичные стрессоры у домашних собак","Острые признаки стресса","Хронические признаки и изменения поведения","Долгосрочные последствия хронического стресса"],tag:"physiology"},
+  {title:"Программа снижения уровня стресса",desc:"Комплексная программа депрессурации: этапы, инструменты, оценка эффективности.",points:["Этапы программы снижения стресса","Инструменты: режим, нюхание, сон","Оценка уровня стресса в динамике","Работа с владельцем: его роль в стрессе собаки"],tag:"behavior"},
+  {title:"Физиологическое обоснование программы снижения стресса",desc:"Как изменения в режиме влияют на нейробиологию стресса, научная база программы.",points:["Как сон снижает кортизол","Нюхание и парасимпатическая система","Ритм дня и гормональная регуляция","Исследования, подтверждающие эффективность"],tag:"physiology"},
+  {title:"Щенки: пренатальное и постнатальное развитие",desc:"Сенситивные периоды, периоды пугливости, влияние стресса матери на щенков.",points:["Пренатальный стресс и его последствия","Периоды чувствительности по Scott & Fuller","Первичный страховой период (8–10 недель)","Социализационное окно: не упустить"],tag:"puppies"},
+  {title:"Щенки: особые потребности до переезда",desc:"Поведение матери, социализация в помёте, что должен сделать заводчик до 8 недель.",points:["Роль матери в развитии щенков","Ранняя нейростимуляция (программа ENS)","Социализация в помёте: с чем знакомить","Признаки хорошего заводчика"],tag:"puppies"},
+  {title:"Щенки: переезд и жизнь в новой семье",desc:"Первые дни, приучение оставаться одному, мифы и стоп-методы воспитания щенков.",points:["Первые 72 часа в новом доме","Приучение оставаться одному с первого дня","Мифы о щенках: топ-10","Стоп-методы: что категорически нельзя"],tag:"puppies"},
+  {title:"Щенки: начальное обучение, прогулки, занятия",desc:"Что и как учить щенка, безопасная социализация, нагрузки по возрасту.",points:["Что учить в первые месяцы","Правила безопасной социализации","Нагрузки по возрасту: правило 5 минут","Прогулки до прививок: за и против"],tag:"puppies"},
+  {title:"Подростки, взрослые, пожилые: физиология",desc:"Физиологические изменения по возрасту, влияние на обучение и потребности.",points:["Физиологические изменения в подростковом возрасте","Взрослая собака: стабилизация нервной системы","Физиология старения у собак","Когнитивная дисфункция пожилых"],tag:"physiology"},
+  {title:"Подростки: особенности воспитания",desc:"Поведение подростков, почему «сломался» послушный щенок, как выстраивать взаимодействие.",points:["Почему подросток «забыл всё»","Роль дофамина в подростковом поведении","Как взаимодействовать без конфликтов","Обучение подростка: особенности"],tag:"puppies"},
+  {title:"Взрослые и пожилые собаки. Сениоры",desc:"Особые потребности пожилых собак, когнитивная дисфункция, организация жизни сениора.",points:["Признаки старения и когнитивной дисфункции","Особые потребности сениора","Адаптация дома для пожилой собаки","Качество жизни в последние годы"],tag:"life"},
+  {title:"Теории научения. Современная теория",desc:"История изучения научения, классические и современные теории, практическое значение.",points:["Павлов: классическое обусловливание","Скиннер: оперантное обусловливание","Современная теория обучения","Практическое значение для тренера"],tag:"training"},
+  {title:"Современный взгляд на квадрант Скиннера",desc:"Критический разбор оперантного квадранта, ограничения модели, современные дополнения.",points:["Четыре квадранта: разбор по существу","Почему R+ эффективнее на практике","Ограничения квадрантной модели","Современные дополнения к теории"],tag:"training"},
+  {title:"Разные подходы в обучении: сравнение",desc:"Традиционное, принудительное, положительное подкрепление — сравнение на основе науки.",points:["Традиционное обучение: риски и последствия","Почему принуждение работает (краткосрочно)","Почему R+ предпочтительнее","Научная база современного обучения"],tag:"training"},
+  {title:"Обзор актуальных исследований об обучении",desc:"Самые важные исследования последних лет об обучении собак и их практические выводы.",points:["Исследования Ранги Роджерс","Работы Адама Миклоши","Мета-анализы по методам обучения","Что наука говорит о punishment"],tag:"training"},
+  {title:"Виды научения: ассоциативное и неассоциативное",desc:"Классическое и оперантное обусловливание, привыкание, сенситизация — основы.",points:["Классическое обусловливание: механизм","Оперантное обусловливание: механизм","Привыкание vs сенситизация","Как применять в практике"],tag:"training"},
+  {title:"Виды научения: когнитивное и социальное",desc:"Инсайт, имитация, наблюдательное научение — как использовать в обучении.",points:["Когнитивное научение: решение задач","Инсайт: «ага-момент» у собак","Имитационное научение","Социальное обучение у собак"],tag:"training"},
+  {title:"Ассоциативное обучение: практика",desc:"Как строить тренировки на основе классического обусловливания, примеры упражнений.",points:["Введение условного стимула","Маркер как условный стимул","Построение цепочек ассоциаций","Упражнения на классическое обусловливание"],tag:"training"},
+  {title:"Неассоциативное обучение: практика",desc:"Применение привыкания и сенситизации, протоколы для работы с реактивностью.",points:["Протоколы привыкания к шумам","Сенситизация: как избежать","Работа с реактивностью через привыкание","Темп работы при привыкании"],tag:"training"},
+  {title:"Когнитивное обучение: практика",desc:"Задачи на решение проблем, выбор, творческое мышление — как вводить в тренировки.",points:["Задачи на выбор альтернативы","Shaped behaviour через свободное шейпинг","Творческие задания (метод 101 вещь с коробкой)","Как когниция влияет на благополучие"],tag:"training"},
+  {title:"Социальное обучение: практика",desc:"Обучение через демонстрацию, метод «делай как я», особенности применения.",points:["Социальное научение: что умеют собаки","Метод Do As I Do: схема","Демонстрация поведения другой собакой","Ограничения социального обучения"],tag:"training"},
+  {title:"Оптимальное состояние собаки для тренировки",desc:"Уровень возбуждения, стресс и обучение, как определить готовность собаки к занятию.",points:["Закон Йеркса-Додсона для собак","Признаки оптимального возбуждения","Как снизить избыточное возбуждение","Признаки что собака не готова учиться"],tag:"training"},
+  {title:"Мотивация и поощрение в обучении",desc:"Выбор подкрепителей, рейтинг поощрений, как повысить ценность награды.",points:["Виды подкрепителей и их ценность","Как составить рейтинг поощрений","Первичные и вторичные подкрепители","Как повысить ценность награды"],tag:"training"},
+  {title:"Формирование начального навыка. Маркер, кликер",desc:"Введение сигнала, правила марки, работа с кликером — схема и типичные ошибки.",points:["Что такое маркер и почему он работает","Заряжение кликера: схема","Введение сигнала (команды): правила","Типичные ошибки начинающих тренеров"],tag:"training"},
+  {title:"Построение схемы обучения навыку «Оставь»",desc:"Постановка критериев, планирование прогресса, ошибки при обучении «Оставь».",points:["Анализ поведения «Оставь»","Установка критериев и шагов","Плановая таблица тренировок","Типичные ошибки и как их избежать"],tag:"training"},
+  {title:"Повышение критериев и отвлекающие факторы",desc:"Принципы 3D (дистанция, длительность, отвлечение), как вводить постепенно.",points:["Принцип 3D: Distance, Duration, Distraction","Правило одной переменной","Как вводить отвлекающие факторы","Откат и как с ним работать"],tag:"training"},
+  {title:"Современный взгляд на вариабельное поощрение",desc:"Когда и зачем применять вариабельное расписание, мифы об «азарте» и зависимости.",points:["История вариабельного расписания","Когда оно помогает, когда вредит","Мифы о «зависимости» от лакомств","Современные рекомендации"],tag:"training"},
+  {title:"Сложности в процессе тренировки",desc:"Диагностика проблем: собака не понимает, теряет интерес, регрессирует — решения.",points:["Почему собака «не понимает»","Потеря интереса к тренировке","Регресс навыка: причины и решения","Стресс на тренировке: признаки и реакция"],tag:"training"},
+  {title:"Язык тела тренера",desc:"Как собака читает позу и жесты человека, непроизвольные сигналы, ошибки тренера.",points:["Что собака считывает с тела тренера","Непроизвольные сигналы угрозы","Оптимальная поза для обучения","Видеоанализ себя как инструмент роста"],tag:"training"},
+  {title:"Схема обучения навыку ожидания",desc:"Построение «стэй» от 0 до устойчивого поведения, критерии и этапы.",points:["Анализ поведения «стэй»","Этапы: тело, дистанция, длительность, отвлечение","Критерии перехода на следующий этап","Типичные ошибки при обучении ожиданию"],tag:"training"},
+  {title:"Схема обучения подзыву",desc:"Отзыв — самый важный навык: построение надёжного подзыва пошагово.",points:["Почему подзыв — навык безопасности","Этапы построения от игры до реальности","Ошибки, разрушающие подзыв","Как восстановить испорченный подзыв"],tag:"training"},
+  {title:"Метод «Делай, как я»",desc:"Схема обучения имитации, исследования Do As I Do, практическое применение.",points:["История и исследования DoAsIDo","Схема обучения имитации","Применение в работе с реактивными собаками","Ограничения метода"],tag:"training"},
+  {title:"Ходьба на расслабленном поводке по Ругос",desc:"Метод Тюрид Ругос в деталях: принципы, шаги, типичные вопросы.",points:["Принципы метода Тюрид Ругос","Пошаговая схема обучения","Типичные вопросы и ответы","Сочетание с другими методами"],tag:"training"},
+  {title:"Физиология страхов и пугливости",desc:"Нейробиологические механизмы страха, роль миндалины, почему страхи так устойчивы.",points:["Роль миндалины в страхе","Условный рефлекс страха: как формируется","Почему страхи сложно угашаются","Нейропластичность и коррекция страхов"],tag:"physiology"},
+  {title:"Гиперактивность: физиология",desc:"Нейробиологические основы гиперактивности, СДВГ у собак, роль медиаторов.",points:["Дофаминергическая система и гиперактивность","СДВГ у собак: существует ли","Норадреналин и уровень возбуждения","Физиологические триггеры гиперактивности"],tag:"physiology"},
+  {title:"Депрессия и беспомощность: физиология",desc:"Нейрохимия депрессии и выученной беспомощности у собак, как это меняет мозг.",points:["Серотонин, норадреналин и депрессия","Эксперименты Селигмана и их значение","Нейробиология беспомощности","Как восстановить нейрохимию"],tag:"physiology"},
+  {title:"Неврозы: физиология",desc:"Физиологические механизмы поведенческих неврозов, ОКР у собак.",points:["Что происходит в мозге при неврозе","ОКР у собак: нейробиология","Хвостегоня и другие стереотипии","Медикаментозная поддержка при неврозах"],tag:"physiology"},
+  {title:"Физиология поисковой работы. Работа носом",desc:"Как работает обоняние при поиске, нейробиология нюхательной активности и её эффекты.",points:["Нейробиология обоняния","Как собака отслеживает запаховый след","Почему нюхание успокаивает","Нюхательная активность как обогащение"],tag:"search"},
+  {title:"Виды поисковой работы для компаньона и службы",desc:"Поиск как досуговая активность vs служебная работа: цели, методы, требования.",points:["Поиск мотиватора как первая игра","Спортивный манхант и норная работа","Служебный поиск: требования и стандарты","Выбор вида поиска под собаку"],tag:"search"},
+  {title:"Грамотная организация обучения поиску",desc:"Ошибки при введении поиска, требования к площадке, темп обучения, возраст начала.",points:["Оптимальный возраст начала поиска","Требования к площадке и условиям","Типичные ошибки начинающих","Темп усложнения: правила"],tag:"search"},
+  {title:"Поиск мотиватора. Методы обучения. Усложнение",desc:"Введение игрушки/лакомства как предмета поиска, схема усложнения, переход к новым предметам.",points:["Введение мотиватора как цели поиска","Методы обучения: от простого к сложному","Схема усложнения: 10 шагов","Переход к новому предмету поиска"],tag:"search"},
+  {title:"Поиск на местности и сигнал оповещения",desc:"Поиск в природных условиях, обучение индикации, финальная схема полного поиска.",points:["Особенности поиска на местности","Виды индикации (пассивная, активная)","Обучение сигналу оповещения","Финальная схема полного цикла поиска"],tag:"search"}
+];
+
+const TAG_MAP = {
+  behavior: {label: "Поведение", cls: "tag-behavior"},
+  training: {label: "Обучение", cls: "tag-training"},
+  physiology: {label: "Физиология", cls: "tag-physiology"},
+  life: {label: "Жизнь с собакой", cls: "tag-life"},
+  search: {label: "Поиск", cls: "tag-search"},
+  puppies: {label: "Щенки и возраст", cls: "tag-puppies"}
+};
+
+let done = new Set(JSON.parse(localStorage.getItem('dog_done') || '[]'));
+let activeIdx = null;
+let activeFilter = 'all';
+
+function saveDone() {
+  localStorage.setItem('dog_done', JSON.stringify([...done]));
+}
+
+function todayIndex() {
+  const diff = new Date() - START_DATE;
+  return Math.min(Math.max(0, Math.floor(diff / 86400000)), LESSONS.length - 1);
+}
+
+function lessonDate(i) {
+  const d = new Date(START_DATE);
+  d.setDate(d.getDate() + i);
+  return d;
+}
+
+function formatDate(d) {
+  return d.toLocaleDateString('ru-RU', {day: 'numeric', month: 'long', year: 'numeric'});
+}
+
+function renderProgress() {
+  const pct = Math.round(done.size / LESSONS.length * 100);
+  document.getElementById('prog-text').textContent = done.size + ' / ' + LESSONS.length;
+  document.getElementById('prog-fill').style.width = pct + '%';
+}
+
+function renderNav() {
+  const nav = document.getElementById('lesson-nav');
+  const q = document.getElementById('search-input').value.toLowerCase();
+  const ti = todayIndex();
+  nav.innerHTML = '';
+
+  LESSONS.forEach((l, i) => {
+    if (q && !l.title.toLowerCase().includes(q)) return;
+    const isDone = done.has(i);
+    const isToday = i === ti;
+    if (activeFilter === 'today' && !isToday) return;
+    if (activeFilter === 'done' && !isDone) return;
+    if (activeFilter === 'upcoming' && (isDone || i < ti)) return;
+
+    const item = document.createElement('div');
+    item.className = 'lesson-nav-item' + (i === activeIdx ? ' active' : '') + (isToday ? ' is-today' : '');
+    item.innerHTML = `
+      <div class="nav-num">${String(i+1).padStart(2,'0')}</div>
+      <div class="nav-title">${l.title}</div>
+      <div class="nav-check ${isDone ? 'done' : ''}" data-i="${i}"></div>
+    `;
+    item.addEventListener('click', e => {
+      if (e.target.closest('.nav-check')) return;
+      selectLesson(i);
+    });
+    item.querySelector('.nav-check').addEventListener('click', e => {
+      e.stopPropagation();
+      toggleDone(i);
+    });
+    nav.appendChild(item);
+  });
+}
+
+function toggleDone(i) {
+  if (done.has(i)) done.delete(i); else done.add(i);
+  saveDone();
+  renderProgress();
+  renderNav();
+  if (activeIdx === i) renderContent();
+}
+
+function selectLesson(i) {
+  activeIdx = i;
+  renderNav();
+  renderContent();
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+function goToday() {
+  selectLesson(todayIndex());
+  setTimeout(() => {
+    const active = document.querySelector('.lesson-nav-item.active');
+    if (active) active.scrollIntoView({behavior: 'smooth', block: 'center'});
+  }, 100);
+}
+
+function renderContent() {
+  const area = document.getElementById('content-area');
+  const ti = todayIndex();
+
+  if (activeIdx === null) {
+    // Welcome screen
+    area.innerHTML = `
+      <div class="welcome">
+        <h2>Добро пожаловать в курс</h2>
+        <p>Учебный план рассчитан на 108 занятий — по одной теме в день. Каждый день открывай нужную тему, изучай материал и отмечай как пройденное. Занятие дня: <strong>${LESSONS[ti].title}</strong>.</p>
+        <div class="stats-grid">
+          <div class="stat-card"><div class="stat-num">${LESSONS.length}</div><div class="stat-label">всего занятий</div></div>
+          <div class="stat-card"><div class="stat-num">${done.size}</div><div class="stat-label">пройдено</div></div>
+          <div class="stat-card"><div class="stat-num">${ti + 1}</div><div class="stat-label">занятие сегодня</div></div>
+        </div>
+        <button class="btn-primary" onclick="goToday()">Открыть занятие дня →</button>
+      </div>`;
+    return;
+  }
+
+  const l = LESSONS[activeIdx];
+  const isToday = activeIdx === ti;
+  const isDone = done.has(activeIdx);
+  const date = lessonDate(activeIdx);
+  const tag = TAG_MAP[l.tag] || TAG_MAP.behavior;
+  const pts = (l.points || []).map(p => `<div class="key-point"><div class="key-point-dot"></div><p>${p}</p></div>`).join('');
+
+  const todayBadge = isToday ? '<span class="badge-today-tag">Сегодня</span>' : '';
+  const doneBadge = isDone ? '<span class="badge-done-tag">✓ Пройдено</span>' : '';
+
+  area.innerHTML = `
+    <div class="lesson-view">
+      <div class="lesson-eyebrow">
+        <span class="lesson-num-badge">Занятие ${activeIdx + 1} из ${LESSONS.length}</span>
+        ${todayBadge ? '<span class="badge-dot">·</span>' + todayBadge : ''}
+        ${doneBadge ? '<span class="badge-dot">·</span>' + doneBadge : ''}
+      </div>
+      <h1 class="lesson-main-title">${l.title}</h1>
+      <div class="lesson-date-line">${formatDate(date)}</div>
+      <span class="section-tag ${tag.cls}">${tag.label}</span>
+      <div class="lesson-desc-block"><p>${l.desc}</p></div>
+      ${pts ? `<div class="key-points"><div class="key-points-title">Ключевые темы занятия</div>${pts}</div>` : ''}
+      <div class="lesson-actions">
+        <button class="btn-secondary done-btn${isDone ? ' done-btn' : ''}" onclick="toggleDone(${activeIdx})">
+          ${isDone ? '✓ Отметить как непройденное' : 'Отметить как пройденное'}
+        </button>
+      </div>
+      <div class="divider"></div>
+      <div class="lesson-nav-arrows">
+        <button class="nav-arrow" onclick="selectLesson(${activeIdx - 1})" ${activeIdx === 0 ? 'disabled' : ''}>
+          ← <span>${activeIdx > 0 ? 'Занятие ' + activeIdx + ': ' + LESSONS[activeIdx-1].title : ''}</span>
+        </button>
+        <button class="nav-arrow" onclick="selectLesson(${activeIdx + 1})" ${activeIdx === LESSONS.length-1 ? 'disabled' : ''}>
+          <span>${activeIdx < LESSONS.length-1 ? 'Занятие ' + (activeIdx+2) + ': ' + LESSONS[activeIdx+1].title : ''}</span> →
+        </button>
+      </div>
+    </div>`;
+}
+
+function updateDateDisplay() {
+  document.getElementById('date-display').textContent = formatDate(new Date());
+}
+
+// Init
+document.getElementById('search-input').addEventListener('input', renderNav);
+document.querySelectorAll('.filter-pill').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeFilter = btn.dataset.filter;
+    renderNav();
+  });
+});
+
+updateDateDisplay();
+renderProgress();
+renderNav();
+renderContent();
+
+// Auto-select today on load
+setTimeout(() => {
+  selectLesson(todayIndex());
+  const active = document.querySelector('.lesson-nav-item.active');
+  if (active) active.scrollIntoView({block: 'center'});
+}, 100);
+</script>
+</body>
+</html>
