@@ -25,6 +25,7 @@ export const plannerUiText = {
     "completed": "Completed",
     "next": "Next",
     "empty": "No lessons match the current search and filter.",
+    "clearFilter": "Clear filter",
     "language": "Language"
   },
   "pl": {
@@ -47,6 +48,7 @@ export const plannerUiText = {
     "completed": "Ukonczone",
     "next": "Nastepna",
     "empty": "Brak lekcji pasujacych do biezacego wyszukiwania i filtra.",
+    "clearFilter": "Wyczysc filtr",
     "language": "Jezyk"
   },
   "ru": {
@@ -69,6 +71,7 @@ export const plannerUiText = {
     "completed": "Пройдено",
     "next": "Далее",
     "empty": "Нет занятий, подходящих под текущий поиск и фильтр.",
+    "clearFilter": "Сбросить фильтр",
     "language": "Язык"
   }
 };

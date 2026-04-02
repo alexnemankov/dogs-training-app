@@ -1,4 +1,4 @@
-﻿import { startTransition } from "react";
+﻿import { startTransition, useEffect, useRef } from "react";
 import { getLessonContent } from "../lib/plannerUtils.js";
 
 export function PlannerSidebar({
@@ -20,6 +20,11 @@ export function PlannerSidebar({
   onToggleComplete,
   onQueryChange
 }) {
+  const activeRowRef = useRef(null);
+  useEffect(() => {
+    activeRowRef.current?.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  }, [activeLessonId]);
+
   return (
     <aside className="sidebar">
       <section className="sidebar-block brand-block">
@@ -51,7 +56,14 @@ export function PlannerSidebar({
             {completed.size} / {lessons.length}
           </strong>
         </div>
-        <div className="progress-track" aria-hidden="true">
+        <div
+          className="progress-track"
+          role="progressbar"
+          aria-valuenow={Math.round(progressValue)}
+          aria-valuemin={0}
+          aria-valuemax={100}
+          aria-label={dict.progress}
+        >
           <div className="progress-fill" style={{ width: `${progressValue}%` }} />
         </div>
       </section>
@@ -84,7 +96,19 @@ export function PlannerSidebar({
 
       <section className="sidebar-block lesson-list-block">
         {visibleLessons.length === 0 ? (
-          <div className="empty-sidebar">{dict.empty}</div>
+          <div className="empty-sidebar">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="empty-icon"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <p>{dict.empty}</p>
+            {(filter !== "all" || query) && (
+              <button
+                type="button"
+                className="empty-reset"
+                onClick={() => { startTransition(() => { onFilterChange("all"); onQueryChange(""); }); }}
+              >
+                {dict.clearFilter ?? "Clear filter"}
+              </button>
+            )}
+          </div>
         ) : (
           visibleLessons.map((lesson, index) => {
             const content = getLessonContent(lesson, language);
@@ -95,6 +119,7 @@ export function PlannerSidebar({
             return (
               <div
                 key={lesson.id}
+                ref={lesson.id === activeLessonId ? activeRowRef : null}
                 className={`lesson-nav-row${lesson.id === activeLessonId ? " is-active" : ""}${isDone ? " is-done" : ""}${isToday ? " is-today" : ""}`}
               >
                 <button

@@ -33,7 +33,8 @@ export function LessonContent({
       <div className="main-toolbar">
         <p className="main-date">{activeDateLabel}</p>
         <button type="button" className="today-button" onClick={onJumpToToday}>
-          {"<-"} {dict.todayButton}
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 5l-7 7 7 7"/></svg>
+          {dict.todayButton}
         </button>
       </div>
 
@@ -45,7 +46,6 @@ export function LessonContent({
       </div>
 
       <h2 className="lesson-title">{activeContent.title}</h2>
-      <p className="lesson-date-line">{activeDateLabel}</p>
       <div className="lesson-tag">{activeModule.label}</div>
 
       <section className="summary-box">
@@ -68,10 +68,11 @@ export function LessonContent({
         <button
           type="button"
           className="nav-arrow"
+          aria-label={dict.previous ?? "Previous lesson"}
           onClick={() => previousLesson && onLessonSelect(previousLesson.id)}
           disabled={!previousLesson}
         >
-          {"<-"}
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 5l-7 7 7 7"/></svg>
         </button>
         <button
           type="button"
@@ -80,8 +81,9 @@ export function LessonContent({
           disabled={!nextLesson}
         >
           {nextLesson
-            ? `${dict.next}: ${truncate(getLessonContent(nextLesson, language).title, 26)} ->`
-            : `${dict.next} ->`}
+            ? `${dict.next}: ${truncate(getLessonContent(nextLesson, language).title, 26)}`
+            : dict.next}
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
         </button>
       </div>
     </main>

@@ -3,7 +3,7 @@
   --paper: #fbf7ef;
   --ink: #23160c;
   --text: #6f6659;
-  --muted: #9c9283;
+  --muted: #706659;
   --line: rgba(136, 112, 79, 0.14);
   --line-strong: rgba(136, 112, 79, 0.22);
   --accent: #d0862f;
@@ -50,8 +50,14 @@ button {
 }
 
 .sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: sticky;
+  top: 0;
   border-right: 1px solid var(--line);
   background: linear-gradient(180deg, #faf5eb 0%, #f7f0e5 100%);
+  overflow: hidden;
 }
 
 .sidebar-block {
@@ -117,10 +123,11 @@ button {
   border: 0;
   background: transparent;
   color: var(--text);
-  padding: 6px 10px;
+  padding: 10px 12px;
   border-radius: 999px;
   font-size: 0.72rem;
   font-weight: 700;
+  min-height: 44px;
 }
 
 .lang-button.is-active {
@@ -197,8 +204,8 @@ button {
 }
 
 .filter-pill {
-  min-height: 28px;
-  padding: 0 11px;
+  min-height: 44px;
+  padding: 0 14px;
   border-radius: 999px;
   color: #7b6e5a;
   font-size: 0.8rem;
@@ -211,9 +218,9 @@ button {
 }
 
 .lesson-list-block {
+  flex: 1 1 0;
   padding: 4px 0 10px;
-  max-height: calc(100vh - 220px);
-  overflow: auto;
+  overflow-y: auto;
 }
 
 .lesson-nav-row {
@@ -271,6 +278,7 @@ button {
 }
 
 .lesson-nav-toggle {
+  position: relative;
   width: 15px;
   height: 15px;
   border: 1px solid var(--line-strong);
@@ -286,6 +294,12 @@ button {
     border-color 180ms ease,
     transform 180ms ease,
     box-shadow 180ms ease;
+}
+
+.lesson-nav-toggle::before {
+  content: "";
+  position: absolute;
+  inset: -14px;
 }
 
 .lesson-nav-toggle::after {
@@ -341,10 +355,13 @@ button {
 }
 
 .today-button {
-  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 44px;
   padding: 0 13px;
   border-radius: 8px;
-  color: var(--accent);
+  color: #9e5f0d;
   font-size: 0.78rem;
 }
 
@@ -475,7 +492,7 @@ html[lang="ru"] .article-heading {
 .article-callout-label,
 .comparison-label {
   margin: 0 0 10px;
-  color: var(--accent);
+  color: #9e5f0d;
   font-size: 0.74rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -682,7 +699,10 @@ html[lang="ru"] .article-quote p {
 
 .nav-arrow,
 .nav-next {
-  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
   border-radius: 10px;
   color: #7c6f5d;
   font-size: 0.9rem;
@@ -690,6 +710,7 @@ html[lang="ru"] .article-quote p {
 
 .nav-arrow {
   width: 52px;
+  justify-content: center;
 }
 
 .nav-next {
@@ -697,7 +718,33 @@ html[lang="ru"] .article-quote p {
 }
 
 .empty-sidebar {
-  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 28px 24px;
+  text-align: center;
+}
+
+.empty-sidebar p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.empty-icon {
+  color: var(--muted);
+  opacity: 0.6;
+}
+
+.empty-reset {
+  border: 1px solid var(--line-strong);
+  background: var(--chip);
+  color: #9e5f0d;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  min-height: 44px;
 }
 
 button:disabled {
@@ -738,18 +785,37 @@ button:disabled {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .lesson-nav-row.is-done {
+    animation: none;
+  }
+
+  .lesson-nav-toggle.is-done,
+  .lesson-nav-row.is-done .lesson-nav-toggle {
+    animation: none;
+  }
+
+  .progress-fill {
+    transition: none;
+  }
+}
+
 @media (max-width: 1080px) {
   .planner-shell {
     grid-template-columns: 1fr;
   }
 
   .sidebar {
+    height: auto;
+    position: static;
     border-right: 0;
     border-bottom: 1px solid var(--line);
   }
 
   .lesson-list-block {
+    flex: none;
     max-height: 360px;
+    overflow-y: auto;
   }
 
   .main {

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python .claude/skills/ui-ux-pro-max/scripts/search.py \"education course learning pet training app\" --design-system -p \"Dog Training Academy\" -f markdown)",
+      "Bash(python .claude/skills/ui-ux-pro-max/scripts/search.py \"animation accessibility loading focus mobile\" --domain ux -n 8)"
+    ]
+  }
+}
