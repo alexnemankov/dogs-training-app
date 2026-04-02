@@ -1,3 +1,76 @@
+export const plannerLanguages = ["en", "pl", "ru"];
+
+export const plannerFilters = ["all", "today", "upcoming", "done"];
+
+export const plannerUiText = {
+  en: {
+    appTitle: "Dog Ethology & Behavior",
+    appSubtitle: "Curriculum plan · 114 lessons",
+    progress: "Progress",
+    searchPlaceholder: "Search topics...",
+    filters: {
+      all: "All",
+      today: "Today",
+      upcoming: "Upcoming",
+      done: "Done"
+    },
+    todayButton: "Today",
+    currentLesson: "Lesson",
+    from: "of",
+    todayBadge: "Today",
+    keyTopics: "Key lesson topics",
+    complete: "Mark as completed",
+    completed: "Completed",
+    next: "Next",
+    empty: "No lessons match the current search and filter.",
+    language: "Language"
+  },
+  pl: {
+    appTitle: "Kynologia i Behawiorystyka",
+    appSubtitle: "Plan nauki · 114 lekcji",
+    progress: "Postep",
+    searchPlaceholder: "Szukaj tematow...",
+    filters: {
+      all: "Wszystkie",
+      today: "Dzis",
+      upcoming: "Dalej",
+      done: "Ukonczone"
+    },
+    todayButton: "Dzis",
+    currentLesson: "Lekcja",
+    from: "z",
+    todayBadge: "Dzis",
+    keyTopics: "Kluczowe tematy lekcji",
+    complete: "Oznacz jako ukonczone",
+    completed: "Ukonczone",
+    next: "Nastepna",
+    empty: "Brak lekcji pasujacych do biezacego wyszukiwania i filtra.",
+    language: "Jezyk"
+  },
+  ru: {
+    appTitle: "Кинология и Бихевиористика",
+    appSubtitle: "Учебный план · 114 занятий",
+    progress: "Прогресс",
+    searchPlaceholder: "Поиск по темам...",
+    filters: {
+      all: "Все",
+      today: "Сегодня",
+      upcoming: "Впереди",
+      done: "Пройдено"
+    },
+    todayButton: "Сегодня",
+    currentLesson: "Занятие",
+    from: "из",
+    todayBadge: "Сегодня",
+    keyTopics: "Ключевые темы занятия",
+    complete: "Отметить как пройденное",
+    completed: "Пройдено",
+    next: "Далее",
+    empty: "Нет занятий, подходящих под текущий поиск и фильтр.",
+    language: "Язык"
+  }
+};
+
 export const courseData = {
   "startDate": "2026-04-02",
   "modules": [
