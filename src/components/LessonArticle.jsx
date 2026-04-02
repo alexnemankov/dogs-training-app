@@ -1,3 +1,7 @@
+import { IcebergBlock } from "./blocks/IcebergBlock.jsx";
+import { FlipCardsBlock } from "./blocks/FlipCardsBlock.jsx";
+import { SorcBuilderBlock } from "./blocks/SorcBuilderBlock.jsx";
+
 function buildFallbackArticle(content) {
   return [
     {
@@ -233,6 +237,30 @@ function renderBlock(block, index) {
         </div>
         {block.caption ? <p>{block.caption}</p> : null}
       </section>
+    );
+  }
+
+  if (block.type === "iceberg") {
+    return (
+      <div key={index} className="article-block">
+        <IcebergBlock block={block} />
+      </div>
+    );
+  }
+
+  if (block.type === "flipCards") {
+    return (
+      <div key={index} className="article-block">
+        <FlipCardsBlock block={block} />
+      </div>
+    );
+  }
+
+  if (block.type === "sorcBuilder") {
+    return (
+      <div key={index} className="article-block">
+        <SorcBuilderBlock block={block} />
+      </div>
     );
   }
 
