@@ -84,7 +84,6 @@ button {
 .lesson-date-line,
 .empty-sidebar,
 .summary-box p,
-.topics-list,
 .lesson-nav-title {
   margin: 0;
   color: var(--text);
@@ -407,32 +406,13 @@ html[lang="ru"] .lesson-title {
   background: rgba(255, 252, 246, 0.68);
 }
 
-.summary-box p,
-.topics-list li {
+.summary-box p {
   font-size: 0.92rem;
   line-height: 1.58;
 }
 
-.topics-section {
-  margin-top: 24px;
-}
-
 .section-label {
   margin-bottom: 12px;
-}
-
-.topics-list {
-  max-width: 700px;
-  margin: 0;
-  padding-left: 17px;
-}
-
-.topics-list li::marker {
-  color: var(--accent);
-}
-
-.topics-list li + li {
-  margin-top: 7px;
 }
 
 .lesson-article {
