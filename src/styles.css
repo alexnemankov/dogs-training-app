@@ -435,6 +435,246 @@ html[lang="ru"] .lesson-title {
   margin-top: 7px;
 }
 
+.lesson-article {
+  max-width: 690px;
+  margin-top: 30px;
+}
+
+.article-block + .article-block {
+  margin-top: 26px;
+}
+
+.article-block p,
+.article-block li,
+.article-block figcaption,
+.article-block footer {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.93rem;
+  line-height: 1.72;
+}
+
+.article-heading {
+  margin: 0 0 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+  font-family: "Fraunces", serif;
+  font-size: 1.28rem;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: -0.02em;
+}
+
+html[lang="ru"] .article-heading {
+  font-family: "Prata", "Fraunces", serif;
+  letter-spacing: -0.01em;
+}
+
+.article-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.article-intro {
+  margin-bottom: 14px;
+}
+
+.article-callout {
+  padding: 16px 18px;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 14px 14px 0;
+  background: rgba(248, 239, 223, 0.58);
+}
+
+.article-callout.tone-success {
+  border-left-color: #5b9666;
+  background: rgba(214, 236, 214, 0.88);
+}
+
+.article-callout-label,
+.comparison-label {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.article-callout.tone-success .article-callout-label {
+  color: #4c8057;
+}
+
+.article-cards,
+.comparison-grid,
+.principles-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.article-cards.columns-1 {
+  grid-template-columns: 1fr;
+}
+
+.article-cards.columns-2,
+.comparison-grid,
+.principles-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.article-card,
+.comparison-card,
+.principle-card,
+.track-item,
+.glossary-item {
+  padding: 15px 16px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  background: rgba(255, 251, 244, 0.54);
+}
+
+.article-card h4,
+.comparison-card h4,
+.principle-card h4,
+.track-item h4,
+.check-item h4,
+.glossary-item h4,
+.numbered-points h4 {
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.comparison-list,
+.article-bullets,
+.article-links {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.comparison-list li + li,
+.article-bullets li + li,
+.article-links li + li {
+  margin-top: 7px;
+}
+
+.numbered-points {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.numbered-points li,
+.check-item {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+}
+
+.numbered-badge,
+.check-icon,
+.principle-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.principles-grid .principle-icon {
+  margin-bottom: 12px;
+}
+
+.track-list,
+.glossary-list,
+.check-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.track-item {
+  display: grid;
+  grid-template-columns: 10px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+}
+
+.track-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+}
+
+.track-copy {
+  min-width: 0;
+}
+
+.track-copy h4,
+.track-copy p,
+.track-meta {
+  display: inline;
+}
+
+.track-meta {
+  color: var(--muted);
+  font-size: 0.84rem;
+  white-space: nowrap;
+}
+
+.article-quote {
+  margin: 0;
+  padding: 8px 0 0 18px;
+  border-left: 3px solid rgba(208, 134, 47, 0.8);
+}
+
+.article-quote p {
+  color: var(--ink);
+  font-family: "Fraunces", serif;
+  font-size: 1.08rem;
+  line-height: 1.55;
+}
+
+html[lang="ru"] .article-quote p {
+  font-family: "Prata", "Fraunces", serif;
+}
+
+.article-links a {
+  color: #8b5d24;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(139, 93, 36, 0.24);
+}
+
+.article-image img,
+.article-embed iframe {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(136, 112, 79, 0.16);
+  border-radius: 14px;
+  background: #f2e8da;
+}
+
+.article-image img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.article-embed iframe {
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
 .complete-button {
   margin-top: 22px;
   min-height: 36px;
@@ -556,6 +796,21 @@ button:disabled {
 
   .summary-box {
     padding: 18px;
+  }
+
+  .article-cards.columns-2,
+  .comparison-grid,
+  .principles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .track-item {
+    grid-template-columns: 10px minmax(0, 1fr);
+  }
+
+  .track-meta {
+    grid-column: 2;
+    margin-top: 4px;
   }
 
   .main-toolbar,

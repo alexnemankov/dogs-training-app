@@ -30,6 +30,33 @@ export function getLessonContent(lesson, language) {
   return lesson.translations[language] ?? lesson.translations.ru;
 }
 
+export function extractLessonSearchText(content) {
+  const values = [];
+
+  const visit = (value) => {
+    if (!value) {
+      return;
+    }
+
+    if (typeof value === "string") {
+      values.push(value);
+      return;
+    }
+
+    if (Array.isArray(value)) {
+      value.forEach(visit);
+      return;
+    }
+
+    if (typeof value === "object") {
+      Object.values(value).forEach(visit);
+    }
+  };
+
+  visit(content.article);
+  return values.join(" ");
+}
+
 export function flattenLessons(courseData) {
   return courseData.modules.flatMap((module) =>
     module.lessons.map((lesson) => ({

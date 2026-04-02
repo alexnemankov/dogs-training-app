@@ -1,4 +1,5 @@
 import { getLessonContent, truncate } from "../lib/plannerUtils.js";
+import { LessonArticle } from "./LessonArticle.jsx";
 
 export function LessonContent({
   activeDateLabel,
@@ -51,14 +52,7 @@ export function LessonContent({
         <p>{activeContent.summary}</p>
       </section>
 
-      <section className="topics-section">
-        <p className="section-label">{dict.keyTopics}</p>
-        <ul className="topics-list">
-          {activeContent.outcomes.slice(0, 4).map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
-      </section>
+      <LessonArticle content={activeContent} />
 
       <button
         type="button"

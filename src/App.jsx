@@ -9,6 +9,7 @@ import { LessonContent } from "./components/LessonContent.jsx";
 import { PlannerSidebar } from "./components/PlannerSidebar.jsx";
 import {
   flattenLessons,
+  extractLessonSearchText,
   formatDate,
   getLessonDate,
   getLessonContent,
@@ -54,6 +55,7 @@ export default function App() {
         content.title,
         content.summary,
         ...content.outcomes,
+        extractLessonSearchText(content),
         moduleContent.label,
         moduleContent.summary
       ]
