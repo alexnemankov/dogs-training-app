@@ -132,6 +132,7 @@ export default function App() {
         onFilterChange={setFilter}
         onLanguageChange={setLanguage}
         onLessonSelect={setActiveLessonId}
+        onToggleComplete={(lessonId) => toggleSetValue(lessonId, setCompleted)}
         onQueryChange={setQuery}
       />
 

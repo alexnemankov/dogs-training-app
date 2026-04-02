@@ -1,4 +1,4 @@
-import { startTransition } from "react";
+﻿import { startTransition } from "react";
 import { getLessonContent } from "../lib/plannerUtils.js";
 
 export function PlannerSidebar({
@@ -17,6 +17,7 @@ export function PlannerSidebar({
   onFilterChange,
   onLanguageChange,
   onLessonSelect,
+  onToggleComplete,
   onQueryChange
 }) {
   return (
@@ -92,18 +93,28 @@ export function PlannerSidebar({
             const isDone = completed.has(lesson.id);
 
             return (
-              <button
+              <div
                 key={lesson.id}
-                type="button"
-                className={`lesson-nav-item${lesson.id === activeLessonId ? " is-active" : ""}${isDone ? " is-done" : ""}${isToday ? " is-today" : ""}`}
-                onClick={() => onLessonSelect(lesson.id)}
+                className={`lesson-nav-row${lesson.id === activeLessonId ? " is-active" : ""}${isDone ? " is-done" : ""}${isToday ? " is-today" : ""}`}
               >
-                <span className="lesson-nav-order">{String(index + 1).padStart(2, "0")}</span>
-                <span className="lesson-nav-copy">
-                  <span className="lesson-nav-title">{content.title}</span>
-                </span>
-                <span className="lesson-nav-check" aria-hidden="true" />
-              </button>
+                <button
+                  type="button"
+                  className="lesson-nav-item"
+                  onClick={() => onLessonSelect(lesson.id)}
+                >
+                  <span className="lesson-nav-order">{String(index + 1).padStart(2, "0")}</span>
+                  <span className="lesson-nav-copy">
+                    <span className="lesson-nav-title">{content.title}</span>
+                  </span>
+                </button>
+                <button
+                  type="button"
+                  className={`lesson-nav-toggle${isDone ? " is-done" : ""}`}
+                  aria-pressed={isDone}
+                  aria-label={isDone ? dict.completed : dict.complete}
+                  onClick={() => onToggleComplete(lesson.id)}
+                />
+              </div>
             );
           })
         )}
