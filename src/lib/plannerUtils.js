@@ -32,19 +32,10 @@ export function getLessonContent(lesson, language) {
 
 export function flattenLessons(courseData) {
   return courseData.modules.flatMap((module) =>
-    module.lessons.map((lesson, index) => ({
+    module.lessons.map((lesson) => ({
       ...lesson,
       moduleId: module.id,
-      moduleOrder: module.order,
-      moduleAccent: module.accent,
-      moduleTranslations: module.translations,
-      moduleLessonIndex: index,
-      globalOrder:
-        courseData.modules
-          .filter((candidate) => candidate.order < module.order)
-          .reduce((sum, candidate) => sum + candidate.lessons.length, 0) +
-        index +
-        1
+      moduleTranslations: module.translations
     }))
   );
 }

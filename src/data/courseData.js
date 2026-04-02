@@ -1,73 +1,73 @@
-export const plannerLanguages = ["en", "pl", "ru"];
+export const plannerLanguages = ["en","pl","ru"];
 
-export const plannerFilters = ["all", "today", "upcoming", "done"];
+export const plannerFilters = ["all","today","upcoming","done"];
 
 export const plannerUiText = {
-  en: {
-    appTitle: "Dog Ethology & Behavior",
-    appSubtitle: "Curriculum plan · 114 lessons",
-    progress: "Progress",
-    searchPlaceholder: "Search topics...",
-    filters: {
-      all: "All",
-      today: "Today",
-      upcoming: "Upcoming",
-      done: "Done"
+  "en": {
+    "appTitle": "Dog Ethology & Behavior",
+    "appSubtitle": "Curriculum plan · 114 lessons",
+    "progress": "Progress",
+    "searchPlaceholder": "Search topics...",
+    "filters": {
+      "all": "All",
+      "today": "Today",
+      "upcoming": "Upcoming",
+      "done": "Done"
     },
-    todayButton: "Today",
-    currentLesson: "Lesson",
-    from: "of",
-    todayBadge: "Today",
-    keyTopics: "Key lesson topics",
-    complete: "Mark as completed",
-    completed: "Completed",
-    next: "Next",
-    empty: "No lessons match the current search and filter.",
-    language: "Language"
+    "todayButton": "Today",
+    "currentLesson": "Lesson",
+    "from": "of",
+    "todayBadge": "Today",
+    "keyTopics": "Key lesson topics",
+    "complete": "Mark as completed",
+    "completed": "Completed",
+    "next": "Next",
+    "empty": "No lessons match the current search and filter.",
+    "language": "Language"
   },
-  pl: {
-    appTitle: "Kynologia i Behawiorystyka",
-    appSubtitle: "Plan nauki · 114 lekcji",
-    progress: "Postep",
-    searchPlaceholder: "Szukaj tematow...",
-    filters: {
-      all: "Wszystkie",
-      today: "Dzis",
-      upcoming: "Dalej",
-      done: "Ukonczone"
+  "pl": {
+    "appTitle": "Kynologia i Behawiorystyka",
+    "appSubtitle": "Plan nauki · 114 lekcji",
+    "progress": "Postep",
+    "searchPlaceholder": "Szukaj tematow...",
+    "filters": {
+      "all": "Wszystkie",
+      "today": "Dzis",
+      "upcoming": "Dalej",
+      "done": "Ukonczone"
     },
-    todayButton: "Dzis",
-    currentLesson: "Lekcja",
-    from: "z",
-    todayBadge: "Dzis",
-    keyTopics: "Kluczowe tematy lekcji",
-    complete: "Oznacz jako ukonczone",
-    completed: "Ukonczone",
-    next: "Nastepna",
-    empty: "Brak lekcji pasujacych do biezacego wyszukiwania i filtra.",
-    language: "Jezyk"
+    "todayButton": "Dzis",
+    "currentLesson": "Lekcja",
+    "from": "z",
+    "todayBadge": "Dzis",
+    "keyTopics": "Kluczowe tematy lekcji",
+    "complete": "Oznacz jako ukonczone",
+    "completed": "Ukonczone",
+    "next": "Nastepna",
+    "empty": "Brak lekcji pasujacych do biezacego wyszukiwania i filtra.",
+    "language": "Jezyk"
   },
-  ru: {
-    appTitle: "Кинология и Бихевиористика",
-    appSubtitle: "Учебный план · 114 занятий",
-    progress: "Прогресс",
-    searchPlaceholder: "Поиск по темам...",
-    filters: {
-      all: "Все",
-      today: "Сегодня",
-      upcoming: "Впереди",
-      done: "Пройдено"
+  "ru": {
+    "appTitle": "Кинология и Бихевиористика",
+    "appSubtitle": "Учебный план · 114 занятий",
+    "progress": "Прогресс",
+    "searchPlaceholder": "Поиск по темам...",
+    "filters": {
+      "all": "Все",
+      "today": "Сегодня",
+      "upcoming": "Впереди",
+      "done": "Пройдено"
     },
-    todayButton: "Сегодня",
-    currentLesson: "Занятие",
-    from: "из",
-    todayBadge: "Сегодня",
-    keyTopics: "Ключевые темы занятия",
-    complete: "Отметить как пройденное",
-    completed: "Пройдено",
-    next: "Далее",
-    empty: "Нет занятий, подходящих под текущий поиск и фильтр.",
-    language: "Язык"
+    "todayButton": "Сегодня",
+    "currentLesson": "Занятие",
+    "from": "из",
+    "todayBadge": "Сегодня",
+    "keyTopics": "Ключевые темы занятия",
+    "complete": "Отметить как пройденное",
+    "completed": "Пройдено",
+    "next": "Далее",
+    "empty": "Нет занятий, подходящих под текущий поиск и фильтр.",
+    "language": "Язык"
   }
 };
 
@@ -76,8 +76,6 @@ export const courseData = {
   "modules": [
     {
       "id": "behavior",
-      "order": 1,
-      "accent": "#295667",
       "translations": {
         "en": {
           "label": "Behavior",
@@ -88,17 +86,13 @@ export const courseData = {
           "summary": "Nauka o zachowaniu, obserwacja, komunikacja, stres i analiza problemow."
         },
         "ru": {
-          "label": "?????????",
-          "summary": "????? ? ?????????, ??????????, ????????????, ?????? ? ?????? ???????."
+          "label": "Поведение",
+          "summary": "Поведение"
         }
       },
-      "lessonCount": 43,
       "lessons": [
         {
           "id": "behavior-001",
-          "format": "reading",
-          "duration": 22,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Basics of working with behavior. Course organization",
@@ -140,73 +134,15 @@ export const courseData = {
                 "Ключевые понятия кинологии и бихевиористики"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Basics of working with behavior. Course organization",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Podstawy pracy z zachowaniem. Organizacja kursu",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Основы работы с поведением. Организация курса",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-002",
-          "format": "video",
-          "duration": 28,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Origin of dogs, features of evolution",
@@ -248,73 +184,15 @@ export const courseData = {
                 "Как эволюция сформировала поведенческие черты"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Origin of dogs, features of evolution",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Pochodzenie psów, cechy ewolucji",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Происхождение собак, особенности эволюции",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-003",
-          "format": "workshop",
-          "duration": 34,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "The role of a dog in a human family",
@@ -356,73 +234,15 @@ export const courseData = {
                 "Взаимная привязанность: научный взгляд"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "The role of a dog in a human family",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Rola psa w rodzinie ludzkiej",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Роль собаки в семье человека",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-004",
-          "format": "reading",
-          "duration": 40,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Hierarchy: myths and modern knowledge",
@@ -464,73 +284,15 @@ export const courseData = {
                 "Практические последствия отказа от доминирования"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Hierarchy: myths and modern knowledge",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Hierarchia: mity i wiedza współczesna",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Иерархия: мифы и современные знания",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-005",
-          "format": "video",
-          "duration": 46,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Dog Cognitive Abilities",
@@ -572,73 +334,15 @@ export const courseData = {
                 "Социальные когниции: исследования и выводы"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Dog Cognitive Abilities",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Zdolności poznawcze psa",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Когнитивные способности собак",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-006",
-          "format": "workshop",
-          "duration": 52,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Breeds: characteristics and needs",
@@ -680,73 +384,15 @@ export const courseData = {
                 "Несоответствие ожиданий и породных потребностей"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Breeds: characteristics and needs",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Rasy: cechy i potrzeby",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Породы: особенности и потребности",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-007",
-          "format": "reading",
-          "duration": 22,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Rock analysis",
@@ -788,73 +434,15 @@ export const courseData = {
                 "Формирование рекомендаций с учётом породы"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Rock analysis",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Analiza skał",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Анализ породы",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-008",
-          "format": "video",
-          "duration": 28,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Dog emotions",
@@ -876,7 +464,7 @@ export const courseData = {
               "summary": "Podstawowe i złożone emocje u psów, dowody naukowe na temat życia zmysłowego, rozpoznawanie stanów emocjonalnych.",
               "outcomes": [
                 "Podstawowe emocje według Pankseppa",
-                "Czy psy są świadome?",
+                "Czy psy s\u0005 [wiadome?",
                 "Neurobiologiczne markery emocji",
                 "Jak rozpoznać radość, strach, frustrację"
               ],
@@ -891,78 +479,20 @@ export const courseData = {
               "summary": "Базовые и сложные эмоции у собак, научные данные о чувственной жизни, как распознавать эмоциональные состояния.",
               "outcomes": [
                 "Базовые эмоции по Панксеппу",
-                "Являются ли собаки сознательными?",
+                "/2;ONBAO ;8 A>10:8 A>7=0B5;L=K<8?",
                 "Нейробиологические маркеры эмоций",
                 "Как распознать радость, страх, фрустрацию"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Dog emotions",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Psie emocje",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Эмоции собак",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-009",
-          "format": "workshop",
-          "duration": 34,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Dog communication. Rules of interaction",
@@ -1004,73 +534,15 @@ export const courseData = {
                 "Когда общение переходит в конфликт"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Dog communication. Rules of interaction",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Komunikacja psa. Zasady interakcji",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Коммуникация собак. Правила взаимодействия",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-010",
-          "format": "reading",
-          "duration": 40,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Body language in communication with relatives and people",
@@ -1112,73 +584,15 @@ export const courseData = {
                 "Контекст как ключ к интерпретации"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Body language in communication with relatives and people",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Język ciała w komunikacji z bliskimi i ludźmi",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Язык тела в общении с сородичами и человеком",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-011",
-          "format": "video",
-          "duration": 46,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Signals of reconciliation. Building a contact",
@@ -1220,73 +634,15 @@ export const courseData = {
                 "Ошибки людей при знакомстве с собакой"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Signals of reconciliation. Building a contact",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Sygnały pojednania. Budowanie kontaktu",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Сигналы примирения. Построение контакта",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-012",
-          "format": "workshop",
-          "duration": 52,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Barking: types and meaning. Bites: causes and types",
@@ -1328,73 +684,15 @@ export const courseData = {
                 "Предупреждающие сигналы, которые люди игнорируют"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Barking: types and meaning. Bites: causes and types",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Szczekanie: rodzaje i znaczenie. Ukąszenia: przyczyny i rodzaje",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Лай: виды и значение. Укусы: причины и виды",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-013",
-          "format": "reading",
-          "duration": 22,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Observation as a tool of work",
@@ -1436,73 +734,15 @@ export const courseData = {
                 "Дневник наблюдений: форма и примеры"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Observation as a tool of work",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Obserwacja jako narzędzie pracy",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Наблюдение как инструмент работы",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-014",
-          "format": "video",
-          "duration": 28,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Algorithm for working with dog behavior",
@@ -1544,73 +784,15 @@ export const courseData = {
                 "Структура консультации и документация"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Algorithm for working with dog behavior",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Algorytm pracy z zachowaniem psa",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Алгоритм работы с поведением собаки",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-015",
-          "format": "workshop",
-          "duration": 34,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Adaptation of a dog in a new home",
@@ -1652,73 +834,15 @@ export const courseData = {
                 "Организация пространства и режима"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Adaptation of a dog in a new home",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Adaptacja psa w nowym domu",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Адаптация собаки в новом доме",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-016",
-          "format": "reading",
-          "duration": 40,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Developing confidence and behavioral flexibility",
@@ -1760,73 +884,15 @@ export const courseData = {
                 "Ошибки при «закаливании» характера"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Developing confidence and behavioral flexibility",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Rozwijanie pewności siebie i elastyczności zachowań",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Развитие уверенности и поведенческой гибкости",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-017",
-          "format": "video",
-          "duration": 46,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Self-control: mechanisms and development",
@@ -1868,79 +934,21 @@ export const courseData = {
                 "Самоконтроль vs подавление"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Self-control: mechanisms and development",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Samokontrola: mechanizmy i rozwój",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Самоконтроль: механизмы и развитие",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-018",
-          "format": "workshop",
-          "duration": 52,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Algorithm for dealing with “problematic behavior”",
               "summary": "The structure of the initial consultation, problem formulation, goal setting, work plan.",
               "outcomes": [
-                "What does “problematic” mean and for whom?",
+                "What does \u001cproblematic\u001d mean and for whom?",
                 "How to reformulate a client's request",
                 "Setting realistic goals",
                 "Plan structure and timing"
@@ -1955,7 +963,7 @@ export const courseData = {
               "title": "Algorytm radzenia sobie z „problematycznym zachowaniem”",
               "summary": "Struktura konsultacji wstępnej, sformułowanie problemu, ustalenie celu, plan pracy.",
               "outcomes": [
-                "Co oznacza „problematyczny” i dla kogo?",
+                "Co oznacza \u001eproblematyczny\u001d i dla kogo?",
                 "Jak przeformułować prośbę klienta",
                 "Wyznaczanie realistycznych celów",
                 "Struktura planu i harmonogram"
@@ -1976,73 +984,15 @@ export const courseData = {
                 "Структура плана и сроки"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Algorithm for dealing with “problematic behavior”",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Algorytm radzenia sobie z „problematycznym zachowaniem”",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Алгоритм работы с «проблемным поведением»",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-019",
-          "format": "reading",
-          "duration": 22,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Causes of problem behavior",
@@ -2084,73 +1034,15 @@ export const courseData = {
                 "Дифференциальная диагностика причин"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Causes of problem behavior",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Przyczyny problematycznych zachowań",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Причины проблемного поведения",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-020",
-          "format": "video",
-          "duration": 28,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Diseases as a cause of unwanted behavior",
@@ -2192,73 +1084,15 @@ export const courseData = {
                 "Когда поведение — симптом болезни"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Diseases as a cause of unwanted behavior",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Choroby jako przyczyna niepożądanych zachowań",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Заболевания как причина нежелательного поведения",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-021",
-          "format": "workshop",
-          "duration": 34,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Dog mental health",
@@ -2300,73 +1134,15 @@ export const courseData = {
                 "Профилактика ментальных расстройств"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Dog mental health",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Zdrowie psychiczne psa",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Ментальное здоровье собак",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-022",
-          "format": "reading",
-          "duration": 40,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Consultation with a veterinarian",
@@ -2408,73 +1184,15 @@ export const courseData = {
                 "Фармакологическая поддержка в коррекции поведения"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Consultation with a veterinarian",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Konsultacja z lekarzem weterynarii",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Консультация у ветеринарного специалиста",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-023",
-          "format": "video",
-          "duration": 46,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Need satisfaction as a method",
@@ -2516,73 +1234,15 @@ export const courseData = {
                 "Практические стратегии обогащения"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Need satisfaction as a method",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Potrzeba satysfakcji jako metoda",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Удовлетворение потребностей как метод",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-024",
-          "format": "workshop",
-          "duration": 52,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Relaxation techniques",
@@ -2624,73 +1284,15 @@ export const courseData = {
                 "Применение релаксации при реактивности"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Relaxation techniques",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Techniki relaksacyjne",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Техники релаксации",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-025",
-          "format": "reading",
-          "duration": 22,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Rituals as a tool of work",
@@ -2732,73 +1334,15 @@ export const courseData = {
                 "Ошибки при введении ритуалов"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Rituals as a tool of work",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Rytuały jako narzędzie pracy",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Ритуалы как инструмент работы",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-026",
-          "format": "video",
-          "duration": 28,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Aggression: definition and causes",
@@ -2840,73 +1384,15 @@ export const courseData = {
                 "Провоцирующие факторы и условия"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Aggression: definition and causes",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Agresja: definicja i przyczyny",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Агрессия: определение и причины",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-027",
-          "format": "workshop",
-          "duration": 34,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Aggression: algorithm of work",
@@ -2948,73 +1434,15 @@ export const courseData = {
                 "Долгосрочный план и оценка прогресса"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Aggression: algorithm of work",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Agresja: algorytm działania",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Агрессия: алгоритм работы",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-028",
-          "format": "reading",
-          "duration": 40,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Organizing walks with a reactive dog",
@@ -3056,73 +1484,15 @@ export const courseData = {
                 "Коммуникация с окружающими на прогулке"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Organizing walks with a reactive dog",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Organizowanie spacerów z reaktywnym psem",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Организация прогулок с реактивной собакой",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-029",
-          "format": "video",
-          "duration": 46,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Aggression/fearfulness towards passers-by and dogs on the street",
@@ -3164,73 +1534,15 @@ export const courseData = {
                 "Правила безопасности для владельца"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Aggression/fearfulness towards passers-by and dogs on the street",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Agresja/lęk w stosunku do przechodniów i psów na ulicy",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Агрессия/пугливость к прохожим и собакам на улице",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-030",
-          "format": "workshop",
-          "duration": 52,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Aggression/fearfulness towards guests in the house",
@@ -3272,73 +1584,15 @@ export const courseData = {
                 "Инструкция для гостей"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Aggression/fearfulness towards guests in the house",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Agresja/lęk w stosunku do gości w domu",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Агрессия/пугливость к гостям в доме",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-031",
-          "format": "reading",
-          "duration": 22,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Aggression towards family members",
@@ -3380,73 +1634,15 @@ export const courseData = {
                 "Долгосрочный план и работа с семьёй"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Aggression towards family members",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Agresja wobec członków rodziny",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Агрессия к членам семьи",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-032",
-          "format": "video",
-          "duration": 28,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Aggression towards relatives",
@@ -3488,73 +1684,15 @@ export const courseData = {
                 "Профилактика конфликтов между собаками"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Aggression towards relatives",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Agresja wobec bliskich",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Агрессия к сородичам",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-033",
-          "format": "workshop",
-          "duration": 34,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Resocialization of an adult dog",
@@ -3575,7 +1713,7 @@ export const courseData = {
               "title": "Resocjalizacja dorosłego psa",
               "summary": "Algorytm resocjalizacji, tempo pracy, samodzielna praca właściciela z bojaźliwym psem.",
               "outcomes": [
-                "Na czym polega resocjalizacja dorosłego psa?",
+                "Na czym polega resocjalizacja dorosBego psa?",
                 "Algorytm: etapy i kryteria przejścia",
                 "Tempo pracy: dlaczego wolno = szybko",
                 "Samodzielna praca właściciela"
@@ -3596,73 +1734,15 @@ export const courseData = {
                 "Самостоятельная работа владельца"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Resocialization of an adult dog",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Resocjalizacja dorosłego psa",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Ресоциализация взрослой собаки",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-034",
-          "format": "reading",
-          "duration": 40,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Uncleanliness: causes and methods of work",
@@ -3704,73 +1784,15 @@ export const courseData = {
                 "Схема приучения и типичные ошибки"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Uncleanliness: causes and methods of work",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Nieczystość: przyczyny i metody pracy",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Нечистоплотность: причины и способы работы",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-035",
-          "format": "video",
-          "duration": 46,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "The dog cannot stay at home alone: ​​reasons",
@@ -3812,73 +1834,15 @@ export const courseData = {
                 "Видеомониторинг как инструмент диагностики"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "The dog cannot stay at home alone: ​​reasons",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Pies nie może zostać sam w domu: powody",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Собака не может оставаться дома одна: причины",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-036",
-          "format": "workshop",
-          "duration": 52,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "The dog cannot stay at home alone: ​​help",
@@ -3920,73 +1884,15 @@ export const courseData = {
                 "Когда нужна фармакологическая поддержка"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "The dog cannot stay at home alone: ​​help",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Pies nie może zostać sam w domu: pomóżcie",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Собака не может оставаться дома одна: помощь",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-037",
-          "format": "reading",
-          "duration": 22,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Fears: causes and types",
@@ -4028,73 +1934,15 @@ export const courseData = {
                 "Средовые факторы формирования страхов"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Fears: causes and types",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Strach: przyczyny i rodzaje",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Страхи: причины и виды",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-038",
-          "format": "video",
-          "duration": 28,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Fears: overview of working methods",
@@ -4136,73 +1984,15 @@ export const courseData = {
                 "Оценка прогресса"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Fears: overview of working methods",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Obawy: przegląd metod pracy",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Страхи: обзор методик работы",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-039",
-          "format": "workshop",
-          "duration": 34,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Noise phobia in dogs",
@@ -4244,73 +2034,15 @@ export const courseData = {
                 "Терапевтические протоколы и фармакология"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Noise phobia in dogs",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Fobia hałasu u psów",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Шумофобия у собак",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-040",
-          "format": "reading",
-          "duration": 40,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Hyperactivity: methods of work",
@@ -4352,73 +2084,15 @@ export const courseData = {
                 "Нюхательная активность как успокоение"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Hyperactivity: methods of work",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Nadpobudliwość: metody pracy",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Гиперактивность: методики работы",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-041",
-          "format": "video",
-          "duration": 46,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Depression and learned helplessness syndrome",
@@ -4460,73 +2134,15 @@ export const courseData = {
                 "Обогащение среды как терапия"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Depression and learned helplessness syndrome",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Depresja i zespół wyuczonej bezradności",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Депрессия и синдром выученной беспомощности",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-042",
-          "format": "workshop",
-          "duration": 52,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Neuroses: scheme of work",
@@ -4568,73 +2184,15 @@ export const courseData = {
                 "Когда нужна медикаментозная поддержка"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Neuroses: scheme of work",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Nerwice: schemat pracy",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Неврозы: схема работы",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "behavior-043",
-          "format": "reading",
-          "duration": 22,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Stress Reduction Program",
@@ -4676,74 +2234,17 @@ export const courseData = {
                 "Работа с владельцем: его роль в стрессе собаки"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Stress Reduction Program",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Program redukcji stresu",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Программа снижения уровня стресса",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         }
       ]
     },
     {
       "id": "training",
-      "order": 2,
-      "accent": "#b96c32",
       "translations": {
         "en": {
           "label": "Training",
@@ -4754,17 +2255,13 @@ export const courseData = {
           "summary": "Teoria uczenia, wzmocnienia, sygnaly, plany treningowe i uporzadkowana praktyka."
         },
         "ru": {
-          "label": "????????",
-          "summary": "?????? ????????, ????????????, ???????, ????? ???????? ? ????????????????? ????????."
+          "label": "Обучение",
+          "summary": "Обучение"
         }
       },
-      "lessonCount": 29,
       "lessons": [
         {
           "id": "training-001",
-          "format": "reading",
-          "duration": 22,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Teaching Alternative Behaviors",
@@ -4806,73 +2303,15 @@ export const courseData = {
                 "Типичные ошибки при замене поведения"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Teaching Alternative Behaviors",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Nauczanie alternatywnych zachowań",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Обучение альтернативному поведению",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-002",
-          "format": "video",
-          "duration": 28,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Working with the query “dog pulls on leash”",
@@ -4914,73 +2353,15 @@ export const courseData = {
                 "Типичные ошибки и как их избежать"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Working with the query “dog pulls on leash”",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Praca z zapytaniem „pies ciągnie na smyczy”",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Работа с запросом «собака тянет поводок»",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-003",
-          "format": "workshop",
-          "duration": 34,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Working with the request “dog picks up”",
@@ -5022,73 +2403,15 @@ export const courseData = {
                 "«Дай» — безопасная альтернатива"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Working with the request “dog picks up”",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Praca z prośbą „odbiór psa”",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Работа с запросом «собака подбирает»",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-004",
-          "format": "reading",
-          "duration": 40,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Counterconditioning and associative transfers",
@@ -5130,73 +2453,15 @@ export const courseData = {
                 "Примеры из практики"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Counterconditioning and associative transfers",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Kontrwarunkowanie i transfery skojarzeniowe",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Контробусловливание и ассоциативные переносы",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-005",
-          "format": "video",
-          "duration": 46,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Desensitization: scheme, mistakes. Immersion method",
@@ -5238,73 +2503,15 @@ export const courseData = {
                 "Типичные ошибки при десенсибилизации"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Desensitization: scheme, mistakes. Immersion method",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Odczulanie: schemat, błędy. Metoda zanurzeniowa",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Десенсибилизация: схема, ошибки. Метод погружения",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-006",
-          "format": "workshop",
-          "duration": 52,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Analysis of popular protocols",
@@ -5346,73 +2553,15 @@ export const courseData = {
                 "Как выбрать протокол под конкретный случай"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Analysis of popular protocols",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Analiza popularnych protokołów",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Разбор популярных протоколов",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-007",
-          "format": "reading",
-          "duration": 22,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Ignoring unwanted behavior",
@@ -5454,73 +2603,15 @@ export const courseData = {
                 "Схема применения и типичные ошибки"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Ignoring unwanted behavior",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Ignorowanie niepożądanych zachowań",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Игнорирование нежелательного поведения",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-008",
-          "format": "video",
-          "duration": 28,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Learning theories. Modern theory",
@@ -5562,73 +2653,15 @@ export const courseData = {
                 "Практическое значение для тренера"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Learning theories. Modern theory",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Uczenie się teorii. Nowoczesna teoria",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Теории научения. Современная теория",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-009",
-          "format": "workshop",
-          "duration": 34,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "A modern view of Skinner's quadrant",
@@ -5670,73 +2703,15 @@ export const courseData = {
                 "Современные дополнения к теории"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "A modern view of Skinner's quadrant",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Nowoczesny widok na kwadrant Skinnera",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Современный взгляд на квадрант Скиннера",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-010",
-          "format": "reading",
-          "duration": 40,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Different teaching approaches: comparison",
@@ -5778,73 +2753,15 @@ export const courseData = {
                 "Научная база современного обучения"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Different teaching approaches: comparison",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Różne podejścia do nauczania: porównanie",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Разные подходы в обучении: сравнение",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-011",
-          "format": "video",
-          "duration": 46,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Review of current research on learning",
@@ -5886,73 +2803,15 @@ export const courseData = {
                 "Что наука говорит о punishment"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Review of current research on learning",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Przegląd aktualnych badań nad uczeniem się",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Обзор актуальных исследований об обучении",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-012",
-          "format": "workshop",
-          "duration": 52,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Types of learning: associative and non-associative",
@@ -5994,73 +2853,15 @@ export const courseData = {
                 "Как применять в практике"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Types of learning: associative and non-associative",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Rodzaje uczenia się: asocjacyjne i nieasocjacyjne",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Виды научения: ассоциативное и неассоциативное",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-013",
-          "format": "reading",
-          "duration": 22,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Types of learning: cognitive and social",
@@ -6102,73 +2903,15 @@ export const courseData = {
                 "Социальное обучение у собак"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Types of learning: cognitive and social",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Rodzaje uczenia się: poznawczy i społeczny",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Виды научения: когнитивное и социальное",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-014",
-          "format": "video",
-          "duration": 28,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Associative learning: practice",
@@ -6210,73 +2953,15 @@ export const courseData = {
                 "Упражнения на классическое обусловливание"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Associative learning: practice",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Uczenie się skojarzeniowe: praktyka",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Ассоциативное обучение: практика",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-015",
-          "format": "workshop",
-          "duration": 34,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Non-associative learning: practice",
@@ -6318,73 +3003,15 @@ export const courseData = {
                 "Темп работы при привыкании"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Non-associative learning: practice",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Uczenie się nieasocjacyjne: praktyka",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Неассоциативное обучение: практика",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-016",
-          "format": "reading",
-          "duration": 40,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Cognitive learning: practice",
@@ -6426,73 +3053,15 @@ export const courseData = {
                 "Как когниция влияет на благополучие"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Cognitive learning: practice",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Uczenie się poznawcze: praktyka",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Когнитивное обучение: практика",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-017",
-          "format": "video",
-          "duration": 46,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Social learning: practice",
@@ -6534,73 +3103,15 @@ export const courseData = {
                 "Ограничения социального обучения"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Social learning: practice",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Uczenie się społeczne: praktyka",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Социальное обучение: практика",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-018",
-          "format": "workshop",
-          "duration": 52,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Optimal dog condition for training",
@@ -6642,73 +3153,15 @@ export const courseData = {
                 "Признаки что собака не готова учиться"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Optimal dog condition for training",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Optymalna kondycja psa do szkolenia",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Оптимальное состояние собаки для тренировки",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-019",
-          "format": "reading",
-          "duration": 22,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Motivation and encouragement in learning",
@@ -6750,73 +3203,15 @@ export const courseData = {
                 "Как повысить ценность награды"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Motivation and encouragement in learning",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Motywacja i zachęta do nauki",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Мотивация и поощрение в обучении",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-020",
-          "format": "video",
-          "duration": 28,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Formation of initial skills. Marker, clicker",
@@ -6837,7 +3232,7 @@ export const courseData = {
               "title": "Kształtowanie umiejętności początkowych. Marker, kliker",
               "summary": "Wprowadzenie do sygnału, zasady marki, praca z klikerem – schemat i typowe błędy.",
               "outcomes": [
-                "Co to jest marker i dlaczego działa?",
+                "Co to jest marker i dlaczego dziaBa?",
                 "Ładowanie pilota: schemat",
                 "Wprowadzenie sygnału (rozkazu): zasady",
                 "Typowe błędy początkujących trenerów"
@@ -6858,73 +3253,15 @@ export const courseData = {
                 "Типичные ошибки начинающих тренеров"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Formation of initial skills. Marker, clicker",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Kształtowanie umiejętności początkowych. Marker, kliker",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Формирование начального навыка. Маркер, кликер",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-021",
-          "format": "workshop",
-          "duration": 34,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Building a scheme for teaching the “Leave” skill",
@@ -6966,73 +3303,15 @@ export const courseData = {
                 "Типичные ошибки и как их избежать"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Building a scheme for teaching the “Leave” skill",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Budowa schematu nauczania umiejętności „Wyjdź”.",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Построение схемы обучения навыку «Оставь»",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-022",
-          "format": "reading",
-          "duration": 40,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Increased criteria and distractions",
@@ -7074,73 +3353,15 @@ export const courseData = {
                 "Откат и как с ним работать"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Increased criteria and distractions",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Zwiększone kryteria i czynniki rozpraszające",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Повышение критериев и отвлекающие факторы",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-023",
-          "format": "video",
-          "duration": 46,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "A modern view of variable reinforcement",
@@ -7182,73 +3403,15 @@ export const courseData = {
                 "Современные рекомендации"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "A modern view of variable reinforcement",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Nowoczesne spojrzenie na zbrojenie zmienne",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Современный взгляд на вариабельное поощрение",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-024",
-          "format": "workshop",
-          "duration": 52,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Difficulties during training",
@@ -7290,73 +3453,15 @@ export const courseData = {
                 "Стресс на тренировке: признаки и реакция"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Difficulties during training",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Trudności podczas treningu",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Сложности в процессе тренировки",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-025",
-          "format": "reading",
-          "duration": 22,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Coach body language",
@@ -7398,73 +3503,15 @@ export const courseData = {
                 "Видеоанализ себя как инструмент роста"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Coach body language",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Trener mowy ciała",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Язык тела тренера",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-026",
-          "format": "video",
-          "duration": 28,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Waiting skill training scheme",
@@ -7506,73 +3553,15 @@ export const courseData = {
                 "Типичные ошибки при обучении ожиданию"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Waiting skill training scheme",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Program szkolenia umiejętności oczekiwania",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Схема обучения навыку ожидания",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-027",
-          "format": "workshop",
-          "duration": 34,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Call training scheme",
@@ -7614,73 +3603,15 @@ export const courseData = {
                 "Как восстановить испорченный подзыв"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Call training scheme",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Zadzwoń do programu szkoleniowego",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Схема обучения подзыву",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-028",
-          "format": "reading",
-          "duration": 40,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "\"Do as I do\" method",
@@ -7722,73 +3653,15 @@ export const courseData = {
                 "Ограничения метода"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "\"Do as I do\" method",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Metoda „rób tak jak ja”.",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Метод «Делай, как я»",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "training-029",
-          "format": "video",
-          "duration": 46,
-          "level": "Advanced",
           "translations": {
             "en": {
               "title": "Walking on a relaxed leash in Rugos",
@@ -7830,74 +3703,17 @@ export const courseData = {
                 "Сочетание с другими методами"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Walking on a relaxed leash in Rugos",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Chodzenie na luźnej smyczy w Rugos",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Ходьба на расслабленном поводке по Ругос",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         }
       ]
     },
     {
       "id": "physiology",
-      "order": 3,
-      "accent": "#35654b",
       "translations": {
         "en": {
           "label": "Physiology",
@@ -7908,17 +3724,13 @@ export const courseData = {
           "summary": "Neurobiologia, bol, fizjologia stresu, uklady zdrowia i procesy organizmu."
         },
         "ru": {
-          "label": "??????????",
-          "summary": "?????????????, ????, ?????????? ???????, ??????? ???????? ? ???????? ?????????."
+          "label": "Физиология",
+          "summary": "Физиология"
         }
       },
-      "lessonCount": 18,
       "lessons": [
         {
           "id": "physiology-001",
-          "format": "reading",
-          "duration": 22,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Anatomy. Choosing walking gear",
@@ -7940,7 +3752,7 @@ export const courseData = {
               "summary": "Budowa ciała psa, jak anatomia wpływa na dobór szelek, obroży i smyczy.",
               "outcomes": [
                 "Anatomia szyi, pleców, klatki piersiowej",
-                "Jak kołnierz wpływa na tchawicę i kręgosłup szyjny?",
+                "Jak koBnierz wpBywa na tchawic\u0019 i kr\u0019gosBup szyjny?",
                 "Kryteria wyboru uprzęży",
                 "Rodzaje amunicji i ich wpływ na ruch"
               ],
@@ -7960,73 +3772,15 @@ export const courseData = {
                 "Виды амуниции и их влияние на движение"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Anatomy. Choosing walking gear",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Anatomia. Wybór sprzętu do chodzenia",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Анатомия. Выбор прогулочной амуниции",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "physiology-002",
-          "format": "video",
-          "duration": 28,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Physiology: nervous system and brain",
@@ -8050,7 +3804,7 @@ export const courseData = {
                 "CNS i PNS: jak działa układ nerwowy",
                 "Kluczowe struktury mózgu i ich funkcje",
                 "Neuroprzekaźniki i zachowanie",
-                "Neuroplastyczność: czy mózg można zmienić?"
+                "Neuroplastyczno[\u0007: czy m�zg mo|na zmieni\u0007?"
               ],
               "materials": [
                 "Notatki z lekcji",
@@ -8068,73 +3822,15 @@ export const courseData = {
                 "Нейропластичность: можно ли изменить мозг"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Physiology: nervous system and brain",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Fizjologia: układ nerwowy i mózg",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Физиология: нервная система и мозг",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "physiology-003",
-          "format": "workshop",
-          "duration": 34,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Sensory systems of dogs",
@@ -8176,73 +3872,15 @@ export const courseData = {
                 "Вибриссы, терморецепция, вестибулярная система"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Sensory systems of dogs",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Układy sensoryczne psów",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Сенсорные системы собак",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "physiology-004",
-          "format": "reading",
-          "duration": 40,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Digestion. Nutrition and behavior",
@@ -8284,73 +3922,15 @@ export const courseData = {
                 "Организация кормления и пищевое поведение"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Digestion. Nutrition and behavior",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Trawienie. Odżywianie i zachowanie",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Пищеварение. Питание и поведение",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "physiology-005",
-          "format": "video",
-          "duration": 46,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Musculoskeletal system",
@@ -8392,73 +3972,15 @@ export const courseData = {
                 "Влияние ОДА на двигательную активность"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Musculoskeletal system",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Układ mięśniowo-szkieletowy",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Опорно-двигательный аппарат",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "physiology-006",
-          "format": "workshop",
-          "duration": 52,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Primary diagnosis of musculoskeletal problems",
@@ -8500,73 +4022,15 @@ export const courseData = {
                 "Когда срочно к ветеринару-ортопеду"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Primary diagnosis of musculoskeletal problems",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Podstawowa diagnostyka schorzeń układu mięśniowo-szkieletowego",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Первичная диагностика проблем ОДА",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "physiology-007",
-          "format": "reading",
-          "duration": 22,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Hormonal system and behavior",
@@ -8608,73 +4072,15 @@ export const courseData = {
                 "Гормональные изменения и циклы"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Hormonal system and behavior",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Układ hormonalny i zachowanie",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Гормональная система и поведение",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "physiology-008",
-          "format": "video",
-          "duration": 28,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Providing first aid to a dog",
@@ -8716,73 +4122,15 @@ export const courseData = {
                 "Судороги, тепловой удар, утопление"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Providing first aid to a dog",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Udzielenie pierwszej pomocy psu",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Оказание первой помощи собаке",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "physiology-009",
-          "format": "workshop",
-          "duration": 34,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Dog immune system",
@@ -8824,73 +4172,15 @@ export const courseData = {
                 "Стресс и иммунный ответ"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Dog immune system",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Układ odpornościowy psa",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Иммунная система собак",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "physiology-010",
-          "format": "reading",
-          "duration": 40,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Pain and its perception. Pain Recognition",
@@ -8932,73 +4222,15 @@ export const courseData = {
                 "Поведенческие маркеры хронической боли"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Pain and its perception. Pain Recognition",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Ból i jego percepcja. Rozpoznawanie bólu",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Боль и её восприятие. Распознавание боли",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "physiology-011",
-          "format": "video",
-          "duration": 46,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Stress: concept and physiology",
@@ -9040,73 +4272,15 @@ export const courseData = {
                 "Кумулятивный стресс: что это"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Stress: concept and physiology",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Stres: koncepcja i fizjologia",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Стресс: понятие и физиология",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "physiology-012",
-          "format": "workshop",
-          "duration": 52,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Stress: causes, symptoms, consequences",
@@ -9148,73 +4322,15 @@ export const courseData = {
                 "Долгосрочные последствия хронического стресса"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Stress: causes, symptoms, consequences",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Stres: przyczyny, objawy, skutki",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Стресс: причины, симптомы, последствия",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "physiology-013",
-          "format": "reading",
-          "duration": 22,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Physiological rationale for a stress reduction program",
@@ -9256,73 +4372,15 @@ export const courseData = {
                 "Исследования, подтверждающие эффективность"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Physiological rationale for a stress reduction program",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Fizjologiczne uzasadnienie programu redukcji stresu",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Физиологическое обоснование программы снижения стресса",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "physiology-014",
-          "format": "video",
-          "duration": 28,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Adolescents, adults, elderly: physiology",
@@ -9364,73 +4422,15 @@ export const courseData = {
                 "Когнитивная дисфункция пожилых"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Adolescents, adults, elderly: physiology",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Młodzież, dorośli, osoby starsze: fizjologia",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Подростки, взрослые, пожилые: физиология",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "physiology-015",
-          "format": "workshop",
-          "duration": 34,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Physiology of fears and timidity",
@@ -9472,73 +4472,15 @@ export const courseData = {
                 "Нейропластичность и коррекция страхов"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Physiology of fears and timidity",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Fizjologia lęku i nieśmiałości",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Физиология страхов и пугливости",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "physiology-016",
-          "format": "reading",
-          "duration": 40,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Hyperactivity: physiology",
@@ -9560,7 +4502,7 @@ export const courseData = {
               "summary": "Neurobiologiczne podstawy nadpobudliwości, ADHD u psów, rola mediatorów.",
               "outcomes": [
                 "Układ dopaminergiczny i nadpobudliwość",
-                "ADHD u psów: czy istnieje?",
+                "ADHD u ps�w: czy istnieje?",
                 "Norepinefryna i poziom pobudzenia",
                 "Fizjologiczne czynniki wyzwalające nadpobudliwość"
               ],
@@ -9580,73 +4522,15 @@ export const courseData = {
                 "Физиологические триггеры гиперактивности"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Hyperactivity: physiology",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Nadpobudliwość: fizjologia",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Гиперактивность: физиология",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "physiology-017",
-          "format": "video",
-          "duration": 46,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Depression and helplessness: physiology",
@@ -9688,73 +4572,15 @@ export const courseData = {
                 "Как восстановить нейрохимию"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Depression and helplessness: physiology",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Depresja i bezradność: fizjologia",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Депрессия и беспомощность: физиология",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "physiology-018",
-          "format": "workshop",
-          "duration": 52,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Neuroses: physiology",
@@ -9796,74 +4622,17 @@ export const courseData = {
                 "Медикаментозная поддержка при неврозах"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Neuroses: physiology",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Nerwice: fizjologia",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Неврозы: физиология",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         }
       ]
     },
     {
       "id": "life",
-      "order": 4,
-      "accent": "#6c5b7b",
       "translations": {
         "en": {
           "label": "Life with dogs",
@@ -9874,17 +4643,13 @@ export const courseData = {
           "summary": "Codzienny dobrostan, dom, rytualy, sprzet i jakosc zycia."
         },
         "ru": {
-          "label": "????? ? ???????",
-          "summary": "???????????? ????????????, ???, ???????, ???????? ? ???????? ?????."
+          "label": "Жизнь с собакой",
+          "summary": "Жизнь с собакой"
         }
       },
-      "lessonCount": 14,
       "lessons": [
         {
           "id": "life-001",
-          "format": "reading",
-          "duration": 22,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Selection of special equipment and clothing",
@@ -9926,73 +4691,15 @@ export const courseData = {
                 "Одежда: когда нужна и как выбрать"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Selection of special equipment and clothing",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Dobór specjalnego sprzętu i odzieży",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Выбор специальной амуниции и одежды",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "life-002",
-          "format": "video",
-          "duration": 28,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Selection of household items. Hygienic care",
@@ -10034,73 +4741,15 @@ export const courseData = {
                 "Когтерезки и уход за лапами"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Selection of household items. Hygienic care",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Wybór artykułów gospodarstwa domowego. Higieniczna pielęgnacja",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Выбор предметов быта. Гигиенический уход",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "life-003",
-          "format": "workshop",
-          "duration": 34,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Needs and species-typical behavior",
@@ -10142,73 +4791,15 @@ export const courseData = {
                 "Пять доменов благополучия"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Needs and species-typical behavior",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Potrzeby i zachowania typowe dla gatunku",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Потребности и видотипичное поведение",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "life-004",
-          "format": "reading",
-          "duration": 40,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Physical activity: benefits and risks",
@@ -10250,73 +4841,15 @@ export const courseData = {
                 "Баланс физической и умственной нагрузки"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Physical activity: benefits and risks",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Aktywność fizyczna: korzyści i ryzyko",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Физические нагрузки: польза и риски",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "life-005",
-          "format": "video",
-          "duration": 46,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Organizing your home space",
@@ -10358,73 +4891,15 @@ export const courseData = {
                 "Обогащение среды в ограниченном пространстве"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Organizing your home space",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Organizacja przestrzeni domowej",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Организация домашнего пространства",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "life-006",
-          "format": "workshop",
-          "duration": 52,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Games and activities for quality of life",
@@ -10466,73 +4941,15 @@ export const courseData = {
                 "Игра с хозяином: правила безопасной игры"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Games and activities for quality of life",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Gry i zajęcia na rzecz jakości życia",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Игры и занятия для качества жизни",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "life-007",
-          "format": "reading",
-          "duration": 22,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Educational games for dogs",
@@ -10574,73 +4991,15 @@ export const courseData = {
                 "Игры для пожилых и больных собак"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Educational games for dogs",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Gry edukacyjne dla psów",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Развивающие игры для собак",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "life-008",
-          "format": "video",
-          "duration": 28,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Useful rituals for a comfortable life",
@@ -10682,73 +5041,15 @@ export const courseData = {
                 "Как ввести ритуал без принуждения"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Useful rituals for a comfortable life",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Przydatne rytuały zapewniające wygodne życie",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Полезные ритуалы для комфортной жизни",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "life-009",
-          "format": "workshop",
-          "duration": 34,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Interacting with your dog at home",
@@ -10790,73 +5091,15 @@ export const courseData = {
                 "Конфликты в быту: предотвращение"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Interacting with your dog at home",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Interakcja z psem w domu",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Взаимодействие с собакой дома",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "life-010",
-          "format": "reading",
-          "duration": 40,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Organization of walks according to needs",
@@ -10898,73 +5141,15 @@ export const courseData = {
                 "Как часто и сколько гулять"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Organization of walks according to needs",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Organizacja spacerów według potrzeb",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Организация прогулок по потребностям",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "life-011",
-          "format": "video",
-          "duration": 46,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "A modern view of dog welfare",
@@ -11006,73 +5191,15 @@ export const courseData = {
                 "Как улучшить welfare конкретной собаки"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "A modern view of dog welfare",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Współczesne spojrzenie na dobrostan psów",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Современный взгляд на благополучие собак",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "life-012",
-          "format": "workshop",
-          "duration": 52,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Dog Breeding: Process and Legislation",
@@ -11095,7 +5222,7 @@ export const courseData = {
               "outcomes": [
                 "Jak wybiera się parę do krycia",
                 "Dziedziczenie temperamentu i charakteru",
-                "Co wyróżnia odpowiedzialnego hodowcę?",
+                "Co wyr�|nia odpowiedzialnego hodowc\u0019?",
                 "Ustawodawstwo hodowlane w Rosji"
               ],
               "materials": [
@@ -11114,73 +5241,15 @@ export const courseData = {
                 "Законодательство о разведении в России"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Dog Breeding: Process and Legislation",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Hodowla psów: proces i ustawodawstwo",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Разведение собак: процесс и законодательство",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "life-013",
-          "format": "reading",
-          "duration": 22,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Several animals in the house",
@@ -11222,73 +5291,15 @@ export const courseData = {
                 "Хронические конфликты: когда помочь нельзя"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Several animals in the house",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "W domu kilka zwierząt",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Несколько животных в доме",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "life-014",
-          "format": "video",
-          "duration": 28,
-          "level": "Applied",
           "translations": {
             "en": {
               "title": "Adult and senior dogs. Seniors",
@@ -11330,74 +5341,17 @@ export const courseData = {
                 "Качество жизни в последние годы"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Adult and senior dogs. Seniors",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Psy dorosłe i starsze. Seniorzy",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Взрослые и пожилые собаки. Сениоры",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         }
       ]
     },
     {
       "id": "search",
-      "order": 5,
-      "accent": "#8a4f2d",
       "translations": {
         "en": {
           "label": "Search work",
@@ -11408,17 +5362,13 @@ export const courseData = {
           "summary": "Praca wechowa, motywacja, przeszukiwanie terenu, sygnalizacja i progresja umiejetnosci."
         },
         "ru": {
-          "label": "?????",
-          "summary": "??????????? ??????, ?????????, ????? ?? ?????????, ????????? ? ???????? ????????? ???????."
+          "label": "Поиск",
+          "summary": "Поиск"
         }
       },
-      "lessonCount": 5,
       "lessons": [
         {
           "id": "search-001",
-          "format": "reading",
-          "duration": 22,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Physiology of search work. Nose work",
@@ -11460,73 +5410,15 @@ export const courseData = {
                 "Нюхательная активность как обогащение"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Physiology of search work. Nose work",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Fizjologia pracy poszukiwawczej. Praca z nosem",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Физиология поисковой работы. Работа носом",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "search-002",
-          "format": "video",
-          "duration": 28,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Types of search work for companion and service",
@@ -11568,73 +5460,15 @@ export const courseData = {
                 "Выбор вида поиска под собаку"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Types of search work for companion and service",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Rodzaje poszukiwań towarzysza i usługi",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Виды поисковой работы для компаньона и службы",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "search-003",
-          "format": "workshop",
-          "duration": 34,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Competent organization of search training",
@@ -11676,73 +5510,15 @@ export const courseData = {
                 "Темп усложнения: правила"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Competent organization of search training",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Kompetentna organizacja szkoleń poszukiwawczych",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Грамотная организация обучения поиску",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "search-004",
-          "format": "reading",
-          "duration": 40,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Finding a motivator. Teaching methods. Complication",
@@ -11784,73 +5560,15 @@ export const courseData = {
                 "Переход к новому предмету поиска"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Finding a motivator. Teaching methods. Complication",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Znalezienie motywatora. Metody nauczania. Powikłanie",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Поиск мотиватора. Методы обучения. Усложнение",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "search-005",
-          "format": "video",
-          "duration": 46,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Local search and alert signal",
@@ -11892,74 +5610,17 @@ export const courseData = {
                 "Финальная схема полного цикла поиска"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Local search and alert signal",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Lokalne wyszukiwanie i sygnał ostrzegawczy",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Поиск на местности и сигнал оповещения",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         }
       ]
     },
     {
       "id": "puppies",
-      "order": 6,
-      "accent": "#457b9d",
       "translations": {
         "en": {
           "label": "Puppies and age",
@@ -11970,17 +5631,13 @@ export const courseData = {
           "summary": "Etapy rozwoju, okresy wiekowe, socjalizacja i dorastajacy pies."
         },
         "ru": {
-          "label": "????? ? ???????",
-          "summary": "????? ????????, ?????????? ???????, ???????????? ? ??????????? ??????."
+          "label": "Щенки и возраст",
+          "summary": "Щенки и возраст"
         }
       },
-      "lessonCount": 5,
       "lessons": [
         {
           "id": "puppies-001",
-          "format": "reading",
-          "duration": 22,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Puppies: prenatal and postnatal development",
@@ -12022,73 +5679,15 @@ export const courseData = {
                 "Социализационное окно: не упустить"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Puppies: prenatal and postnatal development",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Szczenięta: rozwój prenatalny i postnatalny",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Щенки: пренатальное и постнатальное развитие",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "puppies-002",
-          "format": "video",
-          "duration": 28,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Puppies: Special Needs Before Moving",
@@ -12130,73 +5729,15 @@ export const courseData = {
                 "Признаки хорошего заводчика"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Puppies: Special Needs Before Moving",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Szczenięta: specjalne potrzeby przed przeprowadzką",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Щенки: особые потребности до переезда",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "puppies-003",
-          "format": "workshop",
-          "duration": 34,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Puppies: moving and life in a new family",
@@ -12238,73 +5779,15 @@ export const courseData = {
                 "Стоп-методы: что категорически нельзя"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Puppies: moving and life in a new family",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Szczenięta: przeprowadzka i życie w nowej rodzinie",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Щенки: переезд и жизнь в новой семье",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "puppies-004",
-          "format": "reading",
-          "duration": 40,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Puppies: initial training, walks, classes",
@@ -12346,73 +5829,15 @@ export const courseData = {
                 "Прогулки до прививок: за и против"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Puppies: initial training, walks, classes",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Szczenięta: szkolenie wstępne, spacery, zajęcia",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Щенки: начальное обучение, прогулки, занятия",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         },
         {
           "id": "puppies-005",
-          "format": "video",
-          "duration": 46,
-          "level": "Core",
           "translations": {
             "en": {
               "title": "Teenagers: features of education",
@@ -12454,67 +5879,12 @@ export const courseData = {
                 "Обучение подростка: особенности"
               ],
               "materials": [
-                "???????? ??????",
-                "?????? ??? ?????",
-                "???????????? ??????? ??? ??????? ????"
+                "Конспект лекции",
+                "Иллюстрации или слайды по теме",
+                "Рабочие заметки или домашнее задание"
               ]
             }
-          },
-          "cover": {
-            "en": {
-              "eyebrow": "Lecture media slot",
-              "title": "Teenagers: features of education",
-              "description": "Use this area for lecture covers, diagrams, slides, or image-based examples."
-            },
-            "pl": {
-              "eyebrow": "Miejsce na media do lekcji",
-              "title": "Nastolatki: cechy edukacji",
-              "description": "W tym miejscu dodasz okladki lekcji, diagramy, slajdy lub przyklady graficzne."
-            },
-            "ru": {
-              "eyebrow": "????? ??? ?????????? ??????",
-              "title": "Подростки: особенности воспитания",
-              "description": "??????????? ???? ???? ??? ??????? ??????, ????, ??????? ??? ????????? ????????."
-            }
-          },
-          "resources": [
-            {
-              "kind": "summary",
-              "status": "ready",
-              "translations": {
-                "en": {
-                  "title": "Lesson summary",
-                  "description": "A concise explanatory block for the key idea of this lesson."
-                },
-                "pl": {
-                  "title": "Podsumowanie lekcji",
-                  "description": "Zwarty blok wyjasniajacy glowna idee tej lekcji."
-                },
-                "ru": {
-                  "title": "??????? ??????????",
-                  "description": "??????? ??????????? ???? ? ???????? ????? ????? ???????."
-                }
-              }
-            },
-            {
-              "kind": "gallery",
-              "status": "planned",
-              "translations": {
-                "en": {
-                  "title": "Image gallery slot",
-                  "description": "Reserved space for future lesson images, examples, or diagrams."
-                },
-                "pl": {
-                  "title": "Miejsce na galerie",
-                  "description": "Zarezerwowane miejsce na przyszle obrazy, przyklady lub diagramy."
-                },
-                "ru": {
-                  "title": "???? ??? ???????",
-                  "description": "????????????????? ????? ??? ??????? ???????????, ???????? ??? ????."
-                }
-              }
-            }
-          ]
+          }
         }
       ]
     }
