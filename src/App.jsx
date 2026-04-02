@@ -1,4 +1,4 @@
-import { startTransition, useDeferredValue, useEffect, useMemo, useState } from "react";
+﻿import { startTransition, useDeferredValue, useEffect, useMemo, useState } from "react";
 import { courseData } from "./data/courseData.js";
 
 const STORAGE_KEYS = {
@@ -14,11 +14,11 @@ const UI_TEXT = {
     brandKicker: "React curriculum workspace",
     brandTitle: "Dog Course Planner",
     brandSubtitle:
-      "A React foundation for a multilingual dog education app with full module coverage, media slots, and room for future lesson expansion.",
+      "A React foundation for a multilingual dog education app with full module coverage and room for future lesson media.",
     introBadge: "Future-ready frontend",
-    introTitle: "All original modules are back, now on a React structure.",
+    introTitle: "All original modules are back on a React structure.",
     introCopy:
-      "The legacy single-file planner has been rebuilt as a Vite and React app with 114 lessons, 6 modules, and a content model that already supports Russian plus EN and PL fallbacks.",
+      "The legacy planner is now a Vite and React app with 114 lessons, 6 modules, and language-specific lesson data for EN, PL, and RU.",
     searchLabel: "Search lessons",
     searchPlaceholder: "Search by lesson title, summary, or module",
     filterLabel: "Filter",
@@ -29,7 +29,7 @@ const UI_TEXT = {
     outcomesTitle: "Learning outcomes",
     materialsTitle: "Suggested materials",
     resourcesTitle: "Content blocks",
-    resourcesCopy: "Each lesson is prepared for real lecture assets, summaries, and future media.",
+    resourcesCopy: "Each lesson is prepared for lecture assets, summaries, and future media.",
     roadmapTitle: "Module roadmap",
     roadmapCopy: "Navigate all lessons in the current module from one place.",
     platformTitle: "Development notes",
@@ -46,7 +46,13 @@ const UI_TEXT = {
     level: "Level",
     module: "Module",
     searchEmpty: "No lessons match this search and filter combination.",
-    contentFallback: "Content is currently sourced from Russian. You can add EN and PL lesson text later in the same data structure.",
+    devNote: "The course data now carries separate language content per lesson, so you can keep expanding EN, PL, and RU directly in one structure.",
+    minutesShort: "min",
+    formatLabels: {
+      reading: "Reading",
+      video: "Video",
+      workshop: "Workshop"
+    },
     filters: {
       all: "All",
       continue: "Continue",
@@ -61,11 +67,11 @@ const UI_TEXT = {
     brandKicker: "Reactowy workspace programu",
     brandTitle: "Dog Course Planner",
     brandSubtitle:
-      "Reactowa baza dla wielojezycznej aplikacji edukacyjnej o psach z pelnym zakresem modulow, miejscami na media i przestrzenia na dalsza rozbudowe lekcji.",
+      "Reactowa baza dla wielojezycznej aplikacji edukacyjnej o psach z pelnym zakresem modulow i miejscami na media lekcji.",
     introBadge: "Frontend gotowy na rozwoj",
-    introTitle: "Wszystkie oryginalne moduly wrocily, teraz na strukturze React.",
+    introTitle: "Wszystkie oryginalne moduly wrocily na strukturze React.",
     introCopy:
-      "Stary planer w jednym pliku zostal przebudowany na aplikacje Vite i React z 114 lekcjami, 6 modulami oraz modelem tresci obslugujacym rosyjski i fallbacki dla EN i PL.",
+      "Stary planer zostal przebudowany na aplikacje Vite i React z 114 lekcjami, 6 modulami oraz osobnymi danymi dla EN, PL i RU.",
     searchLabel: "Szukaj lekcji",
     searchPlaceholder: "Szukaj po tytule, opisie lub module",
     filterLabel: "Filtr",
@@ -76,7 +82,7 @@ const UI_TEXT = {
     outcomesTitle: "Efekty nauki",
     materialsTitle: "Sugerowane materialy",
     resourcesTitle: "Bloki tresci",
-    resourcesCopy: "Kazda lekcja ma przygotowane miejsce na realne materialy, podsumowania i przyszle media.",
+    resourcesCopy: "Kazda lekcja ma przygotowane miejsce na materialy, podsumowania i przyszle media.",
     roadmapTitle: "Plan modulu",
     roadmapCopy: "Przechodz przez wszystkie lekcje aktualnego modulu z jednego miejsca.",
     platformTitle: "Notatki rozwojowe",
@@ -93,7 +99,13 @@ const UI_TEXT = {
     level: "Poziom",
     module: "Modul",
     searchEmpty: "Brak lekcji pasujacych do wyszukiwania i filtra.",
-    contentFallback: "Tresc lekcji pochodzi teraz z rosyjskiego. Teksty EN i PL mozesz dopisac pozniej w tym samym modelu danych.",
+    devNote: "Dane kursu maja teraz osobna tresc dla kazdej lekcji w EN, PL i RU, wiec mozesz dalej rozwijac wszystkie wersje w jednej strukturze.",
+    minutesShort: "min",
+    formatLabels: {
+      reading: "Czytanie",
+      video: "Wideo",
+      workshop: "Warsztat"
+    },
     filters: {
       all: "Wszystkie",
       continue: "Kontynuuj",
@@ -108,11 +120,11 @@ const UI_TEXT = {
     brandKicker: "React-платформа курса",
     brandTitle: "Dog Course Planner",
     brandSubtitle:
-      "React-основа для многоязычного образовательного приложения о собаках с полным набором модулей, слотами под медиа и запасом для дальнейшего роста.",
+      "React-основа для многоязычного образовательного приложения о собаках с полным набором модулей и слотами под медиа занятий.",
     introBadge: "Фронтенд для развития",
-    introTitle: "Все исходные модули возвращены и переведены на React-структуру.",
+    introTitle: "Все исходные модули возвращены на React-структуру.",
     introCopy:
-      "Старый одностраничный планировщик теперь перестроен в приложение на Vite и React со 114 занятиями, 6 модулями и моделью контента с поддержкой русского языка и fallback для EN и PL.",
+      "Старый планировщик перестроен в приложение на Vite и React со 114 занятиями, 6 модулями и отдельными языковыми данными для EN, PL и RU.",
     searchLabel: "Поиск по занятиям",
     searchPlaceholder: "Ищите по названию, описанию или модулю",
     filterLabel: "Фильтр",
@@ -123,7 +135,7 @@ const UI_TEXT = {
     outcomesTitle: "Результаты обучения",
     materialsTitle: "Рекомендуемые материалы",
     resourcesTitle: "Контентные блоки",
-    resourcesCopy: "Каждое занятие уже подготовлено под реальные лекционные материалы, сводки и будущие медиа.",
+    resourcesCopy: "Каждое занятие уже подготовлено под материалы, сводки и будущие медиа.",
     roadmapTitle: "План модуля",
     roadmapCopy: "Переключайтесь между всеми занятиями текущего модуля из одного блока.",
     platformTitle: "Заметки по развитию",
@@ -140,7 +152,13 @@ const UI_TEXT = {
     level: "Уровень",
     module: "Модуль",
     searchEmpty: "Нет занятий, подходящих под текущий поиск и фильтр.",
-    contentFallback: "Контент занятий сейчас полностью идёт из русского источника. Английские и польские тексты можно позже добавить в той же структуре данных.",
+    devNote: "Данные курса теперь содержат отдельный контент для каждого занятия на EN, PL и RU, поэтому все языки можно расширять в одной структуре.",
+    minutesShort: "мин",
+    formatLabels: {
+      reading: "Чтение",
+      video: "Видео",
+      workshop: "Практика"
+    },
     filters: {
       all: "Все",
       continue: "Продолжить",
@@ -160,16 +178,13 @@ function readStorage(key, fallback) {
   if (typeof window === "undefined") {
     return fallback;
   }
-
-  const value = window.localStorage.getItem(key);
-  return value ?? fallback;
+  return window.localStorage.getItem(key) ?? fallback;
 }
 
 function readStorageArray(key) {
   if (typeof window === "undefined") {
     return [];
   }
-
   try {
     return JSON.parse(window.localStorage.getItem(key) ?? "[]");
   } catch {
@@ -181,16 +196,18 @@ function getLocalizedValue(source, language) {
   if (!source) {
     return "";
   }
-
   if (typeof source === "string") {
     return source;
   }
-
   return source[language] ?? source.ru ?? source.en ?? source.pl ?? "";
 }
 
 function getLessonContent(lesson, language) {
   return lesson.translations[language] ?? lesson.translations.ru;
+}
+
+function getFormatLabel(format, dict) {
+  return dict.formatLabels[format] ?? format;
 }
 
 function flattenLessons() {
@@ -231,17 +248,9 @@ export default function App() {
     const normalized = deferredQuery.trim().toLowerCase();
 
     return lessons.filter((lesson) => {
-      const contentRu = getLessonContent(lesson, "ru");
-      const moduleRu = getLocalizedValue(lesson.moduleTranslations, "ru");
-      const moduleEn = getLocalizedValue(lesson.moduleTranslations, "en");
-      const modulePl = getLocalizedValue(lesson.moduleTranslations, "pl");
-      const haystack = [
-        contentRu.title,
-        contentRu.summary,
-        moduleRu.label,
-        moduleEn.label,
-        modulePl.label
-      ]
+      const content = getLessonContent(lesson, language);
+      const moduleContent = getLocalizedValue(lesson.moduleTranslations, language);
+      const haystack = [content.title, content.summary, moduleContent.label, moduleContent.summary]
         .join(" ")
         .toLowerCase();
 
@@ -257,7 +266,7 @@ export default function App() {
 
       return matchesSearch && matchesFilter;
     });
-  }, [completed, deferredQuery, filter, lessons, saved]);
+  }, [completed, deferredQuery, filter, language, lessons, saved]);
 
   const activeLesson =
     visibleLessons.find((lesson) => lesson.id === activeLessonId) ??
@@ -283,18 +292,15 @@ export default function App() {
   }, [saved]);
 
   useEffect(() => {
-    if (!activeLesson) {
-      return;
+    if (activeLesson) {
+      setActiveLessonId(activeLesson.id);
     }
-
-    setActiveLessonId(activeLesson.id);
   }, [activeLesson]);
 
   useEffect(() => {
     if (!activeLessonId) {
       return;
     }
-
     window.localStorage.setItem(STORAGE_KEYS.activeLessonId, activeLessonId);
     window.history.replaceState(null, "", `#${activeLessonId}`);
   }, [activeLessonId]);
@@ -380,7 +386,7 @@ export default function App() {
             </section>
 
             <section className="panel map-panel">
-              <div className="section-heading">
+              <div className="section-heading compact-heading">
                 <div>
                   <h2>{dict.mapTitle}</h2>
                   <p>{dict.mapSubtitle}</p>
@@ -401,7 +407,7 @@ export default function App() {
                       <article
                         key={module.id}
                         className="module-card"
-                        style={{ borderLeft: `4px solid ${module.accent}` }}
+                        style={{ borderLeft: `3px solid ${module.accent}` }}
                       >
                         <div className="module-card-header">
                           <div>
@@ -429,7 +435,7 @@ export default function App() {
                                 <span>
                                   <span className="lesson-name">{content.title}</span>
                                   <span className="lesson-meta">
-                                    {capitalize(lesson.format)} · {lesson.duration} min
+                                    {getFormatLabel(lesson.format, dict)} · {lesson.duration} {dict.minutesShort}
                                   </span>
                                 </span>
                                 <span className="lesson-state" />
@@ -454,11 +460,11 @@ export default function App() {
                   lesson={activeLesson}
                   completed={completed}
                   saved={saved}
-                  onToggleComplete={(lessonId) => toggleSetValue(lessonId, completed, setCompleted)}
-                  onToggleSaved={(lessonId) => toggleSetValue(lessonId, saved, setSaved)}
+                  onToggleComplete={(lessonId) => toggleSetValue(lessonId, setCompleted)}
+                  onToggleSaved={(lessonId) => toggleSetValue(lessonId, setSaved)}
                 />
 
-                <div className="content-grid">
+                <div className="content-grid compact-grid">
                   <section className="panel lesson-panel">
                     <LessonBody dict={dict} language={language} lesson={activeLesson} />
                   </section>
@@ -500,7 +506,7 @@ export default function App() {
                                 <span>
                                   <strong>{content.title}</strong>
                                   <span className="roadmap-copy">
-                                    {capitalize(current.format)} · {current.duration} min
+                                    {getFormatLabel(current.format, dict)} · {current.duration} {dict.minutesShort}
                                   </span>
                                 </span>
                                 <span className="roadmap-mark" />
@@ -513,7 +519,7 @@ export default function App() {
                     <section className="panel panel-compact">
                       <h2 className="panel-title">{dict.platformTitle}</h2>
                       <p className="panel-copy">{dict.platformCopy}</p>
-                      <div className="dev-note">{dict.contentFallback}</div>
+                      <div className="dev-note">{dict.devNote}</div>
                     </section>
                   </aside>
                 </div>
@@ -533,26 +539,23 @@ function LessonHero({ dict, language, lesson, completed, saved, onToggleComplete
   const cover = getLocalizedValue(lesson.cover, language);
 
   return (
-    <section className="hero-card">
-      <div className="hero-grid">
+    <section className="hero-card compact-hero">
+      <div className="hero-grid compact-hero-grid">
         <div>
           <p className="hero-kicker">{dict.currentLesson}</p>
           <h2 className="hero-title">{content.title}</h2>
           <p className="hero-summary">{content.summary}</p>
           <div className="tag-row">
             <span className="tag">{getLocalizedValue(lesson.moduleTranslations, language).label}</span>
-            <span className="tag">{capitalize(lesson.format)}</span>
+            <span className="tag">{getFormatLabel(lesson.format, dict)}</span>
             <span className="tag">{lesson.level}</span>
           </div>
           <div className="meta-row">
             <span className="meta-pill">
-              {dict.duration}: {lesson.duration} min
+              {dict.duration}: {lesson.duration} {dict.minutesShort}
             </span>
             <span className="meta-pill">
               {dict.level}: {lesson.level}
-            </span>
-            <span className="meta-pill">
-              {dict.module}: {getLocalizedValue(lesson.moduleTranslations, language).label}
             </span>
           </div>
           <div className="action-row">
@@ -564,7 +567,7 @@ function LessonHero({ dict, language, lesson, completed, saved, onToggleComplete
             </button>
           </div>
         </div>
-        <article className="visual-card">
+        <article className="visual-card compact-visual">
           <p className="visual-eyebrow">{cover.eyebrow}</p>
           <h3 className="visual-title">{cover.title}</h3>
           <p className="visual-copy">{cover.description}</p>
@@ -580,12 +583,12 @@ function LessonBody({ dict, language, lesson }) {
 
   return (
     <>
-      <div className="lesson-overview">
+      <div className="lesson-overview compact-overview">
         <article className="lesson-copy">
           <h2>{dict.overviewTitle}</h2>
           <p>{content.summary}</p>
         </article>
-        <aside className="cover-placeholder">
+        <aside className="cover-placeholder compact-cover">
           <div className="cover-grid">
             {Array.from({ length: 8 }).map((_, index) => (
               <span key={index} />
@@ -628,7 +631,7 @@ function StatCard({ label, value }) {
   );
 }
 
-function toggleSetValue(value, currentSet, setter) {
+function toggleSetValue(value, setter) {
   setter((previous) => {
     const next = new Set(previous);
     if (next.has(value)) {
@@ -640,6 +643,3 @@ function toggleSetValue(value, currentSet, setter) {
   });
 }
 
-function capitalize(value) {
-  return value.charAt(0).toUpperCase() + value.slice(1);
-}
