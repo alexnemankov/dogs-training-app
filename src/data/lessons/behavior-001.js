@@ -107,8 +107,8 @@ export default {
             "R": "e.g. Jumped at the door, barked 5 times",
             "C": "e.g. Owner shouted — attention received"
           },
-          "resultLabel": "Your analysis:",
-          "resetLabel": "Reset"
+          "revealLabel": "Show example answer",
+          "resetLabel": "Hide all answers"
         },
         {
           "type": "section",
@@ -281,8 +281,8 @@ export default {
             "R": "np. Rzucił się na drzwi, zaszczekał 5 razy",
             "C": "np. Właściciel krzyknął — uwaga uzyskana"
           },
-          "resultLabel": "Twoja analiza:",
-          "resetLabel": "Resetuj"
+          "revealLabel": "Pokaż przykładową odpowiedź",
+          "resetLabel": "Ukryj wszystkie odpowiedzi"
         },
         {
           "type": "section",
@@ -455,8 +455,8 @@ export default {
             "R": "например: бросилась к двери, залаяла 5 раз",
             "C": "например: хозяин прикрикнул — внимание получено"
           },
-          "resultLabel": "Ваш анализ:",
-          "resetLabel": "Сбросить"
+          "revealLabel": "Показать пример ответа",
+          "resetLabel": "Скрыть все ответы"
         },
         {
           "type": "section",

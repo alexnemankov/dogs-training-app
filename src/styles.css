@@ -1235,23 +1235,35 @@ button:disabled {
 }
 
 .sorc-builder-title {
-  margin: 0 0 14px;
+  margin: 0 0 16px;
   font-size: 0.88rem;
   color: var(--text);
-  line-height: 1.5;
+  line-height: 1.58;
 }
 
 .sorc-fields {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
+}
+
+.sorc-field {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(255, 253, 249, 0.7);
+  transition: border-color 160ms ease;
+}
+
+.sorc-field.is-revealed {
+  border-color: var(--line-strong);
 }
 
 .sorc-label {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 5px;
+  padding: 10px 14px 0;
 }
 
 .sorc-badge {
@@ -1268,57 +1280,46 @@ button:disabled {
 }
 
 .sorc-label-text {
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   color: var(--muted);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-.sorc-textarea {
+.sorc-reveal-btn {
+  display: flex;
+  align-items: center;
   width: 100%;
-  padding: 8px 11px;
-  border: 1px solid var(--line-strong);
-  border-radius: 9px;
-  background: #fffdf9;
+  padding: 8px 14px 12px;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  transition: background-color 140ms ease;
+}
+
+.sorc-reveal-btn:hover {
+  background: rgba(208, 134, 47, 0.04);
+}
+
+.sorc-reveal-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.82rem;
+  color: var(--sorc-color, var(--accent));
+  opacity: 0.75;
+  font-style: italic;
+  transition: opacity 140ms ease;
+}
+
+.sorc-reveal-btn:hover .sorc-reveal-hint {
+  opacity: 1;
+}
+
+.sorc-answer {
+  font-size: 0.9rem;
   color: var(--ink);
-  font: inherit;
-  font-size: 0.88rem;
-  line-height: 1.5;
-  resize: none;
-  transition: border-color 160ms ease, box-shadow 160ms ease;
-}
-
-.sorc-textarea:focus {
-  outline: none;
-  border-color: var(--sorc-color, var(--accent));
-  box-shadow: 0 0 0 3px rgba(100, 130, 160, 0.15);
-}
-
-.sorc-result {
-  margin-top: 14px;
-  padding: 13px 15px;
-  border-radius: 10px;
-  background: var(--success-bg);
-  border: 1px solid var(--success-border);
-}
-
-.sorc-result-label {
-  margin: 0 0 7px;
-  font-size: 0.71rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #3a7a47;
-}
-
-.sorc-result-chain {
-  margin: 0;
-  font-size: 0.86rem;
-  line-height: 1.65;
-  color: var(--ink);
-}
-
-.sorc-arrow {
-  color: var(--muted);
+  line-height: 1.55;
 }
 
 .sorc-reset {
@@ -1333,12 +1334,7 @@ button:disabled {
   transition: color 160ms ease, border-color 160ms ease;
 }
 
-.sorc-reset:hover:not(:disabled) {
+.sorc-reset:hover {
   color: var(--ink);
   border-color: rgba(136, 112, 79, 0.45);
-}
-
-.sorc-reset:disabled {
-  opacity: 0.35;
-  cursor: default;
 }

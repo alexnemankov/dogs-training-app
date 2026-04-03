@@ -160,7 +160,7 @@ export default {
         },
         {
           "type": "sorcBuilder",
-          "title": "3. Apply the S-O-R-C Model: A client says, 'My dog chews my shoes to spite me.' Fill in the real analysis below.",
+          "title": "3. Apply the S-O-R-C Model: A client says, 'My dog chews my shoes to spite me.' Think through each step, then reveal the example answer.",
           "labels": {
             "S": "Stimulus — what triggered the behaviour?",
             "O": "Organism — what was the dog's internal state?",
@@ -173,8 +173,8 @@ export default {
             "R": "e.g. Chewed shoes in the hallway",
             "C": "e.g. Chewing released tension; owner returned and gave attention (even if negative)"
           },
-          "resultLabel": "Your S-O-R-C chain:",
-          "resetLabel": "Clear"
+          "revealLabel": "Show example answer",
+          "resetLabel": "Hide all answers"
         },
         {
           "type": "checkList",
@@ -364,7 +364,7 @@ export default {
         },
         {
           "type": "sorcBuilder",
-          "title": "3. Zastosuj model S-O-R-C: Klient mówi: 'Mój pies gryzie moje buty na złość.' Wypełnij poniżej prawdziwą analizę.",
+          "title": "3. Zastosuj model S-O-R-C: Klient mówi: 'Mój pies gryzie moje buty na złość.' Zastanów się nad każdym krokiem, a następnie odkryj przykładową odpowiedź.",
           "labels": {
             "S": "Bodziec — co wyzwoliło zachowanie?",
             "O": "Organizm — jaki był stan wewnętrzny psa?",
@@ -377,8 +377,8 @@ export default {
             "R": "np. Pies gryzł buty w przedpokoju",
             "C": "np. Gryzienie rozładowało napięcie; właściciel wrócił i dał uwagę (nawet negatywną)"
           },
-          "resultLabel": "Twój łańcuch S-O-R-C:",
-          "resetLabel": "Wyczyść"
+          "revealLabel": "Pokaż przykładową odpowiedź",
+          "resetLabel": "Ukryj wszystkie odpowiedzi"
         },
         {
           "type": "checkList",
@@ -568,7 +568,7 @@ export default {
         },
         {
           "type": "sorcBuilder",
-          "title": "3. Применяем модель S-O-R-C: Клиент говорит: «Моя собака грызёт мою обувь мне назло». Заполни реальный анализ ниже.",
+          "title": "3. Применяем модель S-O-R-C: Клиент говорит: «Моя собака грызёт мою обувь мне назло». Подумай над каждым шагом, затем открой пример ответа.",
           "labels": {
             "S": "Стимул — что спровоцировало поведение?",
             "O": "Организм — каково было внутреннее состояние собаки?",
@@ -581,8 +581,8 @@ export default {
             "R": "напр. Собака грызла обувь в прихожей",
             "C": "напр. Грызение сняло напряжение; хозяин вернулся и уделил внимание (пусть и негативное)"
           },
-          "resultLabel": "Твоя цепочка S-O-R-C:",
-          "resetLabel": "Очистить"
+          "revealLabel": "Показать пример ответа",
+          "resetLabel": "Скрыть все ответы"
         },
         {
           "type": "checkList",

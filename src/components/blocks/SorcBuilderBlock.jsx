@@ -7,62 +7,68 @@ const SORC_COLORS = {
   C: "#7a52a8"
 };
 
-export function SorcBuilderBlock({ block }) {
-  const keys = ["S", "O", "R", "C"];
-  const [values, setValues] = useState({ S: "", O: "", R: "", C: "" });
+const KEYS = ["S", "O", "R", "C"];
 
-  function update(key, val) {
-    setValues((prev) => ({ ...prev, [key]: val }));
+export function SorcBuilderBlock({ block }) {
+  const [revealed, setRevealed] = useState(new Set());
+
+  function toggle(key) {
+    setRevealed((prev) => {
+      const next = new Set(prev);
+      next.has(key) ? next.delete(key) : next.add(key);
+      return next;
+    });
   }
 
-  const allFilled = keys.every((k) => values[k].trim());
-  const anyFilled = keys.some((k) => values[k].trim());
+  function reset() {
+    setRevealed(new Set());
+  }
+
+  const allRevealed = KEYS.every((k) => revealed.has(k));
 
   return (
     <div className="sorc-builder">
       {block.title && <p className="sorc-builder-title">{block.title}</p>}
+
       <div className="sorc-fields">
-        {keys.map((key) => (
-          <div key={key} className="sorc-field">
-            <label className="sorc-label">
-              <span className="sorc-badge" style={{ background: SORC_COLORS[key] }}>{key}</span>
-              <span className="sorc-label-text">{block.labels[key]}</span>
-            </label>
-            <textarea
-              className="sorc-textarea"
-              value={values[key]}
-              onChange={(e) => update(key, e.target.value)}
-              placeholder={block.placeholders[key]}
-              rows={2}
-              style={{ "--sorc-color": SORC_COLORS[key] }}
-            />
-          </div>
-        ))}
+        {KEYS.map((key) => {
+          const isOpen = revealed.has(key);
+          return (
+            <div key={key} className={`sorc-field${isOpen ? " is-revealed" : ""}`}>
+              <div className="sorc-label">
+                <span className="sorc-badge" style={{ background: SORC_COLORS[key] }}>{key}</span>
+                <span className="sorc-label-text">{block.labels[key]}</span>
+              </div>
+              <button
+                type="button"
+                className="sorc-reveal-btn"
+                style={{ "--sorc-color": SORC_COLORS[key] }}
+                onClick={() => toggle(key)}
+                aria-expanded={isOpen}
+              >
+                {isOpen ? (
+                  <span className="sorc-answer">{block.placeholders[key]}</span>
+                ) : (
+                  <span className="sorc-reveal-hint">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                    {block.revealLabel ?? "Show example answer"}
+                  </span>
+                )}
+              </button>
+            </div>
+          );
+        })}
       </div>
 
-      {allFilled && (
-        <div className="sorc-result">
-          <p className="sorc-result-label">{block.resultLabel}</p>
-          <p className="sorc-result-chain">
-            {keys.map((key, i) => (
-              <span key={key}>
-                <strong style={{ color: SORC_COLORS[key] }}>{key}:</strong>{" "}
-                {values[key]}
-                {i < keys.length - 1 && <span className="sorc-arrow"> → </span>}
-              </span>
-            ))}
-          </p>
-        </div>
+      {revealed.size > 0 && (
+        <button
+          type="button"
+          className="sorc-reset"
+          onClick={reset}
+        >
+          {block.resetLabel ?? "Hide all"}
+        </button>
       )}
-
-      <button
-        type="button"
-        className="sorc-reset"
-        onClick={() => setValues({ S: "", O: "", R: "", C: "" })}
-        disabled={!anyFilled}
-      >
-        {block.resetLabel}
-      </button>
     </div>
   );
 }
