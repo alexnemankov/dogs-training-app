@@ -1,6 +1,19 @@
+import * as PhosphorIcons from "@phosphor-icons/react";
 import { IcebergBlock } from "./blocks/IcebergBlock.jsx";
 import { FlipCardsBlock } from "./blocks/FlipCardsBlock.jsx";
 import { SorcBuilderBlock } from "./blocks/SorcBuilderBlock.jsx";
+
+function PrincipleIcon({ name, index }) {
+  if (name && /^[A-Z]/.test(name)) {
+    const Icon = PhosphorIcons[name];
+    if (Icon) return <Icon className="principle-icon" size={18} weight="duotone" />;
+  }
+  return (
+    <span className="principle-icon">
+      {name ?? String(index + 1).padStart(2, "0")}
+    </span>
+  );
+}
 
 function buildFallbackArticle(content) {
   return [
@@ -107,7 +120,7 @@ function renderBlock(block, index) {
         <div className="principles-grid">
           {block.items.map((item, itemIndex) => (
             <article key={item.title} className="principle-card">
-              <span className="principle-icon">{item.icon ?? String(itemIndex + 1).padStart(2, "0")}</span>
+              <PrincipleIcon name={item.icon} index={itemIndex} />
               <h4>{item.title}</h4>
               <p>{item.text}</p>
             </article>
