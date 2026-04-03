@@ -1,4 +1,5 @@
 import * as PhosphorIcons from "@phosphor-icons/react";
+import { CheckCircle } from "@phosphor-icons/react";
 import { IcebergBlock } from "./blocks/IcebergBlock.jsx";
 import { FlipCardsBlock } from "./blocks/FlipCardsBlock.jsx";
 import { SorcBuilderBlock } from "./blocks/SorcBuilderBlock.jsx";
@@ -157,9 +158,7 @@ function renderBlock(block, index) {
         <div className="check-list">
           {block.items.map((item) => (
             <article key={item.title} className="check-item">
-              <span className="check-icon" aria-hidden="true">
-                ✓
-              </span>
+              <CheckCircle className="check-icon" size={20} weight="duotone" aria-hidden="true" />
               <div>
                 <h4>{item.title}</h4>
                 <p>{item.text}</p>

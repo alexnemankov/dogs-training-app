@@ -203,6 +203,13 @@ button {
   background: var(--chip);
 }
 
+.filter-pill,
+.today-button,
+.nav-arrow,
+.nav-next {
+  transition: background-color 150ms ease, border-color 150ms ease, box-shadow 150ms ease;
+}
+
 .filter-pill {
   position: relative;
   min-height: 30px;
@@ -210,6 +217,11 @@ button {
   border-radius: 999px;
   color: #7b6e5a;
   font-size: 0.8rem;
+}
+
+.filter-pill:not(.is-active):hover {
+  background: rgba(208, 134, 47, 0.08);
+  border-color: rgba(208, 134, 47, 0.35);
 }
 
 .filter-pill::before {
@@ -343,7 +355,7 @@ button {
 }
 
 .main {
-  padding: 20px 28px 30px 36px;
+  padding: 20px 28px 56px 36px;
   background: var(--paper);
 }
 
@@ -370,6 +382,11 @@ button {
   border-radius: 8px;
   color: #9e5f0d;
   font-size: 0.78rem;
+}
+
+.today-button:hover {
+  background: rgba(208, 134, 47, 0.08);
+  border-color: rgba(208, 134, 47, 0.35);
 }
 
 .lesson-eyebrow-row {
@@ -446,7 +463,16 @@ html[lang="ru"] .lesson-title {
 }
 
 .article-block + .article-block {
-  margin-top: 18px;
+  margin-top: 20px;
+}
+
+/* Give section headings more breathing room when they follow content blocks */
+.article-block + .article-section {
+  margin-top: 32px;
+}
+
+.article-section + .article-section {
+  margin-top: 28px;
 }
 
 .article-block p,
@@ -545,25 +571,27 @@ html[lang="ru"] .article-heading {
 
 .article-card,
 .comparison-card,
-.glossary-item {
-  padding: 15px 16px;
-  border: 1px solid var(--line);
-  border-radius: 13px;
-  background: rgba(255, 251, 244, 0.54);
-}
-
-.principle-card {
-  padding: 18px 18px 16px;
-  border: 1px solid var(--line);
-  border-radius: 13px;
-  background: rgba(255, 251, 244, 0.54);
-}
-
+.glossary-item,
+.principle-card,
 .track-item {
   padding: 15px 16px;
   border: 1px solid var(--line);
   border-radius: 13px;
   background: rgba(255, 251, 244, 0.54);
+  transition: border-color 150ms ease, box-shadow 150ms ease, background-color 150ms ease;
+}
+
+.principle-card {
+  padding: 18px 18px 16px;
+}
+
+.article-card:hover,
+.principle-card:hover,
+.glossary-item:hover,
+.comparison-card:hover {
+  border-color: rgba(208, 134, 47, 0.3);
+  box-shadow: 0 2px 8px rgba(136, 96, 40, 0.08);
+  background: rgba(255, 253, 248, 0.9);
 }
 
 .article-card h4,
@@ -610,8 +638,7 @@ html[lang="ru"] .article-heading {
   align-items: start;
 }
 
-.numbered-badge,
-.check-icon {
+.numbered-badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -622,6 +649,13 @@ html[lang="ru"] .article-heading {
   color: var(--accent);
   font-size: 0.86rem;
   font-weight: 700;
+  flex-shrink: 0;
+}
+
+.check-icon {
+  flex-shrink: 0;
+  color: var(--success-border);
+  margin-top: 1px;
 }
 
 .principle-icon {
@@ -677,7 +711,7 @@ html[lang="ru"] .article-heading {
 
 .article-quote {
   margin: 0;
-  padding: 8px 0 0 18px;
+  padding: 12px 0 12px 20px;
   border-left: 3px solid rgba(208, 134, 47, 0.8);
 }
 
@@ -696,6 +730,12 @@ html[lang="ru"] .article-quote p {
   color: #8b5d24;
   text-decoration: none;
   border-bottom: 1px solid rgba(139, 93, 36, 0.24);
+  transition: color 130ms ease, border-color 130ms ease;
+}
+
+.article-links a:hover {
+  color: #6b4518;
+  border-color: rgba(107, 69, 24, 0.55);
 }
 
 .article-image img,
@@ -719,18 +759,34 @@ html[lang="ru"] .article-quote p {
 }
 
 .complete-button {
-  margin-top: 16px;
-  min-height: 36px;
-  padding: 0 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 20px;
+  min-height: 44px;
+  padding: 0 22px;
   border-radius: 10px;
   background: var(--success-bg);
   border-color: var(--success-border);
   color: #2f6e3e;
   font-size: 0.92rem;
+  font-weight: 500;
+  transition: background-color 150ms ease, box-shadow 150ms ease, border-color 150ms ease;
+}
+
+.complete-button:hover {
+  background: #c8e6c2;
+  border-color: #3d7a4e;
+  box-shadow: 0 1px 5px rgba(55, 120, 70, 0.18);
 }
 
 .complete-button.is-done {
-  background: #edf5ea;
+  background: #e4f2e0;
+  border-color: #5b9666;
+}
+
+.complete-button.is-done:hover {
+  background: #d4eacf;
 }
 
 .nav-divider {
@@ -761,6 +817,13 @@ html[lang="ru"] .article-quote p {
 
 .nav-next {
   padding: 0 16px;
+}
+
+.nav-arrow:not(:disabled):hover,
+.nav-next:not(:disabled):hover {
+  background: rgba(208, 134, 47, 0.08);
+  border-color: rgba(208, 134, 47, 0.38);
+  box-shadow: 0 1px 4px rgba(208, 134, 47, 0.1);
 }
 
 .empty-sidebar {
